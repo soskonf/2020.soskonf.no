@@ -1,19 +1,14 @@
 //@flow
 import * as React from 'react';
-import { connect } from 'react-redux';
-import { store } from '../../store';
-import notFound from '../NotFound/NotFound.js';
-import { getSessions } from '../../actions/sessions';
+import {connect} from 'react-redux';
+import {getSessions} from '../../actions/sessions';
 import Page from '../../components/Page/Page.js';
 import Loader from '../../components/Loader/Loader.js';
-import { Section } from '../../components/Section/Section.js';
+import {Section} from '../../components/Section/Section.js';
 import PageHeader from '../../components/PageHeader/PageHeader.js';
-import { LeftBlock } from '../../components/Block/Block.js';
-import { PageHeading, Container } from '../../components/page';
-import { Block, Header, Content } from '../../components/block';
-import { CBlock, CHeader, CContent } from '../../components/centeredblock';
-import { get, find, compose, constant } from 'lodash/fp';
-import { getSession } from '../../actions/session';
+import {LeftBlock} from '../../components/Block/Block.js';
+import {PageHeading} from '../../components/page';
+import {compose, constant, find, get} from 'lodash/fp';
 
 type ProgramDetailsProps = {
     sessions: [];
@@ -86,11 +81,11 @@ class ProgramDetails extends React.Component<ProgramDetailsProps, ProgramDetails
             return (
                 <Page name='programDetails'>
                     <PageHeader subHeader={speakerString}>{title}</PageHeader>
-                    {video ? <Section alternate pixel>
+                    {/*{video ? <Section alternate pixel>
                         <iframe className='program-details-video' src={`https://player.vimeo.com/video/${video}`} frameBorder="0" allowFullScreen></iframe>
-                    </Section> : null}
+                    </Section> : null}*/}
                     <Section>
-                        <LeftBlock header="abstract">
+                        <LeftBlock header="Ingress">
                             <p className="text-wrap">
                                 {abstract}
                             </p>
@@ -102,26 +97,30 @@ class ProgramDetails extends React.Component<ProgramDetailsProps, ProgramDetails
                                         </p>
                                     </LeftBlock>
                         }) : null}
+{/*
                         <LeftBlock header="intended audience">
                             <p>
                                 {audience}
                             </p>
                         </LeftBlock>
-                        <LeftBlock header="Location">
+*/}
+                        <LeftBlock header="Rom">
                             <p className="too-small">
                                 {room}
                             </p>
                         </LeftBlock>
-                        <LeftBlock header="Language">
+                        <LeftBlock header="Språk">
                             <p className="too-small">
-                                {language === 'en' ? 'English' : 'Norwegian'}
+                                {language === 'en' ? 'Engelsk' : 'Norsk'}
                             </p>
                         </LeftBlock>
+{/*
                         <LeftBlock header="Format">
                             <p className="too-small">
                                 {format}
                             </p>
                         </LeftBlock>
+*/}
                     </Section>
                 </Page>
             )
