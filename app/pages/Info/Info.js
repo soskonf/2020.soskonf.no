@@ -11,7 +11,7 @@ import partners1 from '../../assets/partners_1.jpg';
 function AboutSection() {
     return (
         <Section>
-            <LeftBlock header="TDC 101 the who, what and where">
+            <LeftBlock header="Hva er Sikkerhet og Sårbarhet">
                 <p>
                     Trondheim Developer Conference – A community-driven conference for people in the Trondheim region will be 7
                     years old in 2019! Don’t miss out on a day of inspiring tech talks,
@@ -147,14 +147,14 @@ function QuestionSection() {
 function Info() {
     return (
         <Page name='info'>
-            <PageHeader subHeader="October 21th, 2019" subSubHeader="Trondheim - Norway">Welcome to TDC 2019</PageHeader>
+            <PageHeader subHeader="7.-8. Mai. 2019" subSubHeader="Trondheim - Norway">Velkommen til Sikkerhet og Sårbarhet 2019</PageHeader>
             <AboutSection />
             {/*<TicketSection />*/}
-            <ImageBlock image={tickets2} alt="Tickets" />
+            <ImageBlock image={tickets2} alt="Billetter" />
             <BetterExplorerSection />
             <ImageBlock image={info1} alt="Info" />
             {/*<ProgramSection />*/}
-            <ImageBlock image={partners1} alt="Partners" />
+            <ImageBlock image={partners1} alt="Partnere" />
             <AweZoneSection />
             <QuestionSection />
         </Page>

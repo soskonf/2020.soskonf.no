@@ -6,9 +6,9 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import Button from '../../components/Button/Button';
 import classnames from 'classnames';
 import { connect } from 'react-redux';
-import { Menu } from 'react-feather'; 
-import TDCLogo from '../../assets/logo/logo.svg';
-import TDCLogo_white from '../../assets/logo/logo-white.svg';
+import { Menu } from 'react-feather';
+import SOSLogo from '../../assets/logo/logo.png';
+import SOSLogo_white from '../../assets/logo/logo-white.png';
 import './Navigation.less';
 
 type NavigationProps = {
@@ -43,7 +43,7 @@ function Logo(props: LogoProps) {
         'logo-nav': true
     })
 
-    const logo = props.sticky ? TDCLogo_white : TDCLogo;
+    const logo = props.sticky ? SOSLogo_white : SOSLogo;
     return (
         <Link href="/" className={logoClass}>
             <img src={logo} alt="Logo" />
@@ -144,13 +144,13 @@ class Navigation extends React.Component<NavigationProps, NavigationState> {
             <Col>
                 <Row middle="xs">
                     <NavItem active={this.isActiveNavItem("/info")} link="/info">INFO</NavItem>
-                    <NavItem active={this.isActiveNavItem("/tickets")} link="/tickets">TICKETS</NavItem>
-                    <NavItem active={this.isActiveNavItem("/speakers")} link="/speakers">SPEAKERS</NavItem>
-                    {/*<NavItem active={this.isActiveNavItem("/program")} link="/program">PROGRAM</NavItem>
-                    <NavItem active={this.isActiveNavItem("/workshops")} link="/workshops">WORKSHOPS</NavItem>*/}
-                    <NavItem active={this.isActiveNavItem("/partners")} link="/partners">PARTNERS</NavItem>
-                    <NavItem active={this.isActiveNavItem("/startups")} link="/startups">STARTUPS</NavItem>
-                    <NavItem active={this.isActiveNavItem("/conduct")} link="/conduct">CODE OF CONDUCT</NavItem>
+                    <NavItem active={this.isActiveNavItem("/tickets")} link="/tickets">BILLETTER</NavItem>
+                    <NavItem active={this.isActiveNavItem("/speakers")} link="/speakers">FOREDRAGSHOLDERE</NavItem>
+                    <NavItem active={this.isActiveNavItem("/program")} link="/program">PROGRAM</NavItem>
+                    {/*<NavItem active={this.isActiveNavItem("/workshops")} link="/workshops">WORKSHOPS</NavItem>*/}
+                    <NavItem active={this.isActiveNavItem("/partners")} link="/partners">PARTNERE</NavItem>
+                    {/*<NavItem active={this.isActiveNavItem("/startups")} link="/startups">STARTUPS</NavItem>*/}
+                    {/*<NavItem active={this.isActiveNavItem("/conduct")} link="/conduct">CODE OF CONDUCT</NavItem>*/}
                 </Row>
             </Col>
         )

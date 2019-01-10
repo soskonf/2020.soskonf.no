@@ -1,28 +1,21 @@
 //@flow
 import * as React from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import { Facebook, Mail, Twitter, Github } from 'react-feather';
+import { Facebook, Mail, Twitter } from 'react-feather';
 import Link from '../Link/Link';
 import './Footer.less';
 
 type FooterProps = {
-    javabinUrl?: string,
     facebookUrl?: string,
     twitterUrl?: string,
-    mailUrl?: string,
-    githubUrl?: string,
-    codeOfConduct?: string,
-    cookies?: string
+    mailUrl?: string
 }
 
 Footer.defaultProps = {
-    javabinUrl: "http://java.no",
-    facebookUrl: "https://www.facebook.com/JavaZoneConference",
-    twitterUrl: "https://twitter.com/javazone",
-    mailUrl: "mailto:javazone@java.no",
-    githubUrl: "https://github.com/javaBin",
-    codeOfConduct: "https://java.no/principles.html#"
-}
+    twitterUrl: "https://twitter.com/dndtrdinfosec",
+    mailUrl: "mailto:program@soskonf.no"
+    // , codeOfConduct: "https://java.no/principles.html#"
+};
 
 function Footer(props: FooterProps): React.Node {
     return (
@@ -30,27 +23,24 @@ function Footer(props: FooterProps): React.Node {
             <Row around="xs" className="footer-content">
                 <Col xs={12} sm={8} md={4} lg={4}>
                     <Row center="xs" around="xs">
-                        <Col>
+{/*                        <Col>
                             <a href={props.facebookUrl} target="_blank"><Facebook className="social-icon" size="32" /></a>
-                        </Col>
+                        </Col>*/}
                         <Col>
                             <a href={props.twitterUrl} target="_blank"><Twitter className="social-icon" size="32" /></a>
                         </Col>
                         <Col>
                             <a href={props.mailUrl} target="_blank"><Mail className="social-icon" size="32" /></a>
-                        </Col>{/*
-                        <Col>
-                            <a href={props.githubUrl} target="_blank"><Github className="social-icon" size="32" /></a>
-                        </Col>*/}
+                        </Col>
                     </Row>
-                    <Row center="xs" className="info-spacer">
+                    {/*<Row center="xs" className="info-spacer">
                         <Col>
                             <Link href={props.codeOfConduct} className="javabin nav-item draw meet">Code of Conduct</Link>
                         </Col>
-                        {/* <Col>
+                         <Col>
                             <Link href={props.cookies} className="javabin nav-item draw meet">Cookies</Link>
-                        </Col> */}
-                    </Row>
+                        </Col>
+                    </Row>*/}
                 </Col>
             </Row>
         </Grid>

@@ -24,22 +24,21 @@ type TicketsProps = {
 function Tickets(props: TicketsProps) {
     return (
         <Page name='tickets'>
-	        <PageHeader subHeader="Come join us in Trondheim, October 21th">Tickets to TDC 2018</PageHeader>
+	        <PageHeader subHeader="Britannia Hotell, 7.-8. Mai">Billetter til Sikkerhet og Sårbarhet 2019</PageHeader>
 	        <Section>
-                <CenterBlock header="Get tickets">
-	                    <div className="partner-prices-main sold-out-text">NOK 3.500,-</div>
+                <CenterBlock header="Kjøp billetter">
+	                    <div className="partner-prices-main">NOK 3.500,-</div>
 	                    <P>
-	                        The ticket includes full access to the conference <br />
-	                        <span className="partners__vat">prices ex VAT</span>
+	                        Billetten gir full tilgang til konferansen <br />
+	                        <span className="partners__vat">priser er u/mva</span>
 	                    </P>{/*
 	                    <P>
                             <a className='button button--transparent' href="https://goo.gl/forms/Eb2aOAjeT3v72iNa2">Add your name to the waiting list</a>
 	                    </P>*/}
-	            </CenterBlock>	            
+	            </CenterBlock>
 	        </Section>
 
-            <ImageBlock image={tickets2} alt="Tickets page separator image" />
-
+{/*
  			<Section>
 	            <CenterBlock header="Need more info about Trondheim Developer Conference?">
                     <P>
@@ -53,6 +52,7 @@ function Tickets(props: TicketsProps) {
                     </P>
 	            </CenterBlock>
 	        </Section>
+*/}
 	    </Page>
     )
 }
