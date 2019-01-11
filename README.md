@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/soskonf/2019.soskonf.no.svg?branch=master)](https://travis-ci.org/soskonf/2019.soskonf.no)
+
 # 2019.soskonf.no
 
 This is the repository for 2019.soskonf.no. It is a react application.
