@@ -3,7 +3,7 @@ import * as React from 'react';
 import Page from '../../components/Page/Page';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import {Section} from '../../components/Section/Section';
-import {CenterBlock, ImageBlock, LeftBlock} from '../../components/Block/Block';
+import {CenterBlock, LeftBlock} from '../../components/Block/Block';
 
 function AboutSection() {
     return (
@@ -100,11 +100,11 @@ function Info() {
             <PageHeader subHeader="7.-8. Mai. 2019" subSubHeader="Trondheim - Norge">Velkommen til Sikkerhet og Sårbarhet 2019</PageHeader>
             <AboutSection />
             {/*<TicketSection />*/}
-            <ImageBlock />
+            {/*<ImageBlock />*/}
             <BetterExplorerSection />
-            <ImageBlock />
+            {/*<ImageBlock />*/}
             {/*<ProgramSection />*/}
-            <ImageBlock />
+            {/*<ImageBlock />*/}
             {/*<AweZoneSection />*/}
             <QuestionSection />
         </Page>
