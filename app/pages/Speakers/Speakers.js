@@ -1,21 +1,10 @@
 //@flow
 import * as React from 'react';
-import Container from '../../components/Container/Container';
 import Page from '../../components/Page/Page';
 import PageHeader from '../../components/PageHeader/PageHeader';
-import { CenterBlock, LeftBlock, ImageBlock } from '../../components/Block/Block';
-import { Header } from '../../components/Header/Header';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import Button from '../../components/Button/Button';
-import { Section } from '../../components/Section/Section';
-import { Pitch } from '../../components/page';
-import { Link } from '../../components/link';
-import {Dl, Dt, Dd} from '../../components/definition-list';
-import Timeline from '../../components/timeline';
-import Youtube from '../../components/youtube';
-import speakers1 from '../../assets/speakers_1.jpg';
-import speakers2 from '../../assets/speakers_2.jpg';
-import speakers3 from '../../assets/speakers_3.jpg';
+import {CenterBlock} from '../../components/Block/Block';
+import {Col, Grid, Row} from 'react-flexbox-grid';
+import {Section} from '../../components/Section/Section';
 import './Speakers.less';
 
 type SpeakerProps = {
@@ -32,163 +21,44 @@ const Format = (props) => (
 
 const presentations = {
     icon: 'icon-graduation',
-    title: 'Presentations',
-    length: '30 minutes',
-    description: 'Presentations at TDC are 30 minutes long.'
+    title: 'Foredrag',
+    length: '30 minutter',
+    description: 'Foredrag på Sikkerhet og Sårbarhet er 30 minutter.'
 };
 
 const workshops = {
     icon: 'icon-screen-desktop',
-    title: 'Workshops',
-    length: '2 hours, 4 hours, 8 hours',
-    description: 'We will continue the popular workshop concept with a range of sessions on Tuesday October 22th and 23th. The format for the workshops is in-depth, hands-on and interactive.'
+    title: 'Workshop',
+    length: '2 timer, 4 timer, 8 timer',
+    description: ''
 };
 
 function Speakers(props: SpeakerProps) {
     return (
         <Page name='speakers'>
-            <PageHeader subHeader="Speak at TDC 2019">Call for speakers</PageHeader>
+            <PageHeader subHeader="Hold et foredrag på Sikkerhet og Sårbarhet">Call for Presentations</PageHeader>
             <Section>
-	            <CenterBlock header="About Trondheim Developer Conference">
+	            <CenterBlock header="Om Sikkerhet og Sårbarhet">
                     <p>
-                   		TDC 2019 will be the 7th consecutive Trondheim Developer Conference, and will consist of a day of presentations on October 21th and hands on workshops on the following two days.
-					</p>
+                        Kompleksitet er den største sårbarheten i det norske digitale samfunnet i dag ifølge NSM. Er det mulig å redusere risikoen uten å redusere kompleksiteten? Hva kan vi gjøre for å sikre leverandørkjedene?
+                    </p>
 					<p>
-                        Last year's event was completely sold out, with more than 700 attendees enjoying XXX sessions.
-                    </p>
-                    <p>TDC hosts both internationals and home-grown Norwegian talent as speakers. We'd love to have you join us in 2019!
+                        Økt takt og fokus på digitalisering kan gi god samfunnsøkonomisk effekt, men trusselbildet endrer seg når den digital kompleksiteten øker. Hvordan ivaretar man tilgjengeligheten, som f.eks. for de svakeste som en del av digitalisering?
                     </p>
                     <p>
-                        <br />
-                        Our call for speakers is now closed, but you can still see (and edit) the talks you have submitted.
+                        Snart 1 år med GDPR, hvilken gode og dårlige erfaringer har man gjort seg i dette arbeid og hva er effekten av innføringen? Hvordan kan kunstig intelligens benyttes i tråd med GDPR?
+                    </p>
+                    <p>
+                        Vi ønsker innspill til gode og dårlig erfaringer med personvernforordningen, digital kompleksitet, sikker bruk av kunstig intelligens, sikring av leverandørkjeder og infrastruktur. Tar du utfordringen?
                     </p>
                     <p>
                     	<br />
-	                    <a className='button button--transparent' href="http://submit.trondheimdc.no">See your submitted sessions</a>
+	                    <a className='button button--transparent' href="https://docs.google.com/forms/d/e/1FAIpQLSenzW5G63mrjhs83EsyqQUHqEyJugiHQgxqk6ABS43swhKE9g/viewform">Call for Presentations er åpen frem til 1. februar 2019</a>
 	                </p>
 	            </CenterBlock>
 	        </Section>
 
-            <ImageBlock image={speakers1} alt="Speakers page separator image" />
 
-	        <Section>
-		        <LeftBlock header="What is it like speaking at Trondheim Developer Conference?">
-                    <p>
-                        TDC has become the most important IT event in the Trondheim area! You can see for yourself
-                        – 178 videos from previous years talks are available for free at <a href='https://vimeo.com/trondheimdc'>Vimeo</a>,
-                        and the <a href='https://2018.trondheimdc.no/program'>full program from TDC 2018</a> is also available.
-                    </p>
-                    <p>
-                        We can brag as much as we want, but TDC would be nothing without all the great speakers!
-                        That's why we need your help to make sure that TDC 2019 will be at least as awesome as the earlier events.
-                        If you think you have something interesting to share, please submit your talk or workshop at the latest on June 3rd 2019.
-                    </p>
-                    <p>
-                        Trondheim Developer Conference is committed to diversity, and we are especially interested in quality submissions from groups that are under-represented in tech.
-                    </p>
-	            </LeftBlock>
-	        </Section>
-
-            <ImageBlock image={speakers2} alt="Speakers page separator image" />
-
-	        <Section>
-	            <CenterBlock>
-		            <div className='speakers__formats'>
-	                    <span className='icon-clock'></span>
-	                </div>
-	            </CenterBlock>
-
-				<LeftBlock header="Formats and Durations">
-                    <p>
-                        You should think about which format your talk will work
-                        best in. Are you presenting a new idea, or do you require
-                        more time to elaborate on your subject? How hands-on do
-                        you want to be? We have two formats you can present
-                        your material in.
-                    </p>
-	            </LeftBlock>
-	            <CenterBlock>
-	                <ul className='presentation-formats'>
-	                    <Format {...presentations} />
-	                    <Format {...workshops} />
-	                </ul>
-	            </CenterBlock>
-
-	            <LeftBlock header="Audience and Topics">
-	                    <p>
-	                        TDC is a conference for developers and everything IT, with an emphasis on technical talks.
-                            However, we are open to talks about other areas, including methodology, project management, and other topics related to programming.
-	                    </p>
-	            </LeftBlock>
-
-	            <LeftBlock header="Ongoing Evaluation of Talks">
-                    <p>
-                        Each year we receive many submissions and we consider each submission as it arrives.
-                        Due to the large amount of submission we can however not guarantee that you hear from us immediately.
-                        We do however answer all submissions and try to do so no later than in August.
-                    </p>
-                    <p>
-                        Our advice to you is simple. <strong>Submit early!</strong> The earlier you submit,
-                        the more likely you are to be noticed. Avoid drowning in the end-of-Call for Speakers tsunami!
-                    </p>
-                </LeftBlock>
-                <CenterBlock>
-                    <p>
-                        <Button link='/speakers/tips'>
-                            Some tips and tricks about your submission
-                        </Button>
-                    </p>
-	            </CenterBlock>
-	        </Section>
-
-            <ImageBlock image={speakers3} alt="Speakers page separator image" />
-
-            <Section>
-	            <CenterBlock header="Dates & Deadlines for Trondheim Developer Conference 2019">
-	                <p>
-	                </p>
-                    <Timeline />
-	            </CenterBlock>
-
-	            <LeftBlock header="What’s in it for me?">
-	                    <Dl className='speakers__accepted'>
-	                        <Dt className='speakers__accepted-title'>Accepted presentations and workshops</Dt>
-	                        <Dd className='speakers__accepted-description'>You get free admission to the conference. Additionally you are also invited to the speakers' dinner, held on Ocotober 20th.</Dd>
-	                        <Dt className='speakers__accepted-title'>Coverage of Expenses</Dt>
-	                        <Dd className='speakers__accepted-description'>Please see our <Link href='/speakers/monetary-policy'>reimbursement policy</Link> if you have any questions regarding coverage of other expenses.</Dd>
-	                    </Dl>
-	            </LeftBlock>
-
-            	<LeftBlock header="Important principles">
-                    <p>
-                        TDC is proud to be an independent and community-driven conference.
-                        It is organized by volunteers from many of Trondheims IT-meetups and is run as a non-profit organisation.
-                        This means that we have three important principles for selecting talks:
-                    </p>
-                    <ul className='speakers__list'>
-                        <li className='speakers__principle'>We do not sell speaker slots.</li>
-                        <li className='speakers__principle'>We do not accept sales pitches masked as presentations</li>
-                        <li className='speakers__principle'>We do not differentiate between speakers from partners and independent speakers</li>
-                    </ul>
-                    <p>
-                        If your talk adheres to these very important principles, you are more than welcome to submit it to our Call for Speakers!
-                    </p>
-	            </LeftBlock>
-
-	            <CenterBlock>
-                        <p>
-                            <br />
-                            <a className='button button--transparent' href="http://submit.trondheimdc.no">Submit a talk</a>
-                        </p>
-	            </CenterBlock>
-
-	            <CenterBlock header="We hope to see you at TDC 2019 – please feel free to spread the word to your local community!">
-	                    <p className='speakers__regards'>
-	                        <br />
-	                        Best regards,<br />the Trondheim Developer Conference Program Committee
-	                    </p>
-	            </CenterBlock>
-	        </Section>
         </Page>
     )
 }

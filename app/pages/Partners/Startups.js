@@ -1,13 +1,11 @@
 import * as React from 'react';
-import { Col, Grid, Row } from 'react-flexbox-grid';
-import partners1 from '../../assets/partners_1.jpg';
+import {Col, Grid, Row} from 'react-flexbox-grid';
 import partners2 from '../../assets/partners_2.jpg';
-import { CenterBlock, ImageBlock, LeftBlock } from '../../components/Block/Block';
-import { SubHeader } from '../../components/Header/Header';
+import {ImageBlock, LeftBlock} from '../../components/Block/Block';
 import Page from '../../components/Page/Page';
 import PageHeader from '../../components/PageHeader/PageHeader';
-import { Section } from '../../components/Section/Section';
-import { Link } from '../../components/link';
+import {Section} from '../../components/Section/Section';
+import {Link} from '../../components/link';
 import './Partners.less';
 
 function shuffle(o){
@@ -15,7 +13,7 @@ function shuffle(o){
     return o;
 }
 
-const imagesContext = require.context('../../assets/partners-18', false, /\.svg$/);
+const imagesContext = require.context('../../assets/partners-19', false, /\.svg$/);
 const images = imagesContext.keys().map(image => (
     {context: imagesContext(image), filename: image}
 ));
@@ -43,7 +41,7 @@ function PartnerList(props: PartnerListProps) {
                     )
                 })}
             </Row>
-        </Grid>    
+        </Grid>
     );
 }
 

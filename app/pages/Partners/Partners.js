@@ -1,13 +1,14 @@
 import * as React from 'react';
-import { Col, Grid, Row } from 'react-flexbox-grid';
+import {Col, Grid, Row} from 'react-flexbox-grid';
 import partners1 from '../../assets/partners_1.jpg';
 import partners2 from '../../assets/partners_2.jpg';
-import { CenterBlock, ImageBlock, LeftBlock } from '../../components/Block/Block';
-import { SubHeader } from '../../components/Header/Header';
+import {CenterBlock, ImageBlock, LeftBlock} from '../../components/Block/Block';
+import {Header, SubHeader} from '../../components/Header/Header';
 import Page from '../../components/Page/Page';
 import PageHeader from '../../components/PageHeader/PageHeader';
-import { Section } from '../../components/Section/Section';
-import { Link } from '../../components/link';
+import {Section} from '../../components/Section/Section';
+import {Link} from '../../components/link';
+import partners from '../../data/partners';
 import './Partners.less';
 
 function shuffle(o){
@@ -15,7 +16,7 @@ function shuffle(o){
     return o;
 }
 
-const imagesContext = require.context('../../assets/partners-18', false, /\.svg$/);
+const imagesContext = require.context('../../assets/partners-19', false, /\.svg$/);
 const images = imagesContext.keys().map(image => (
     {context: imagesContext(image), filename: image}
 ));
@@ -43,47 +44,36 @@ function PartnerList(props: PartnerListProps) {
                     )
                 })}
             </Row>
-        </Grid>    
+        </Grid>
     );
 }
 
 function Partners() {
     return (
         <Page name='partners'>
-            <PageHeader subHeader="Join us in 2019">Dear Trondheim Developer Conference Partners</PageHeader>
+            <PageHeader subHeader="Bli partner i 2019">Kjære partnere</PageHeader>
 
             <Section>
-                <LeftBlock header="Last three years: Completely. Sold. Out.">
+                <LeftBlock header="Vi ønsker partnere, ikke sponsorer">
                     <p>
-                        Last year, a record-breaking XXXX people attended JavaZone.
-                        This was also the third (???) year where we were completely sold out of both tickets AND partner stands.
-                        Based on this and feedback from last years partners we‘ve got a feeling that we
-                        might sell out this year as well. So don‘t wait around if you
-                        want to be part of TDC 2019!
-                    </p>
-                </LeftBlock>
-                <LeftBlock header="Our philosophy: Partners, not sponsors">
-                    <p>
-                        We want the expo area to be an attractive space where our partners and participants can hang out and spend time together.
-                        In previous years our partners have done a great job to help us achieve this goal,
-                        and we look forward to seeing what they bring to Trondheim Developer Conference 2019!
-                        TDC’s expo area is a vibrant, busy space full of life and activity.
-                        As a Partner you are not just supporting our conference economically – you participate in the event and help create a unique atmosphere.
+                        Vi ønsker at utstillerområdet skal være spennende for deltakerne under konferansen. For å få til
+                        dette ønsker vi å jobbe sammen med partnerne for å få til et velykket utstillerområde.
+                        Som partner bidrar det ikke bare økonomisk, men for å skape en god atmosfære og opplevelse.
                     </p>
                 </LeftBlock>
             </Section>
-{/*            <Section alternate pixel>
-                <Header align='center'>Partners</Header>
+            <Section alternate pixel>
+                <Header align='center'>Partnere</Header>
                 <PartnerList partners={partners} />
-            </Section>*/}
+            </Section>
             <Section fluid>
-                <ImageBlock image={partners2} alt="JavaZone Expo" />
+                <ImageBlock image={partners2} alt="Britannia Kongress" />
             </Section>
             <Section>
-                <CenterBlock header="The expo area">
+                <CenterBlock header="Utstillerområdet">
                     <p>
-                        All our partner stands are traditionally located in the expo area, which is centrally located in the venue.
-                        During each break, the Expo is full of attendees.
+                        Alle partnere har stands på messeområdet, som er plassert rett utenfor kongresshallen.
+                        I pausene fylles utstillerområde med de fleste deltagerne.
                     </p>
                 </CenterBlock>
             </Section>
@@ -91,32 +81,33 @@ function Partners() {
             <Section dark>
                 <LeftBlock header="Partner options">
                     <p>
-                        All partners are considered equal. Because of the conference venue, Clarion Congress,
-                        we don't have that much of an possibility for expansions.
+                        Utstillerområde på Britannia Hotell går oss god plass og en unik opplevelse.
                     </p>
-                    <SubHeader>Included in all partnerships</SubHeader>
+                    <SubHeader>Innkludert i partneravtalen</SubHeader>
                     <ul className='list'>
                         <li className='list__item'>
-                            A stand in the Expo Area (6 square meters, 2m x 3m).
+                            Stand (9 kvadrat, 3m x 3m).
                         </li>
                         <li className='list__item'>
-                            One conference ticket for the stand crew.
+                            En konferansebillet som gir tilgang til hele konferansen og middagen.
                         </li>
                         <li className='list__item'>
-                            Branding on <a href='https://2019.trondheimdc.no'>2019.trondheimdc.no</a>,
-                            at the venue, the program, and in other promotional material that
-                            we produce.
+                            Ytterligere billetter til redusert partner pris.
+                        </li>
+                        <li className='list__item'>
+                            Logoen på <a href='https://2019.soskonf.no'>2019.soskonf.no</a>,
+                            konferanseområdet, i programmet og all reklame materiell.
                         </li>
                     </ul>
                 </LeftBlock>
             </Section>
             <Section fluid>
-                <ImageBlock image={partners1} alt="JavaZone Expo" />
+                <ImageBlock image={partners1} alt="Britannia Kongress" />
             </Section>
             <Section>
-                <CenterBlock header="Contact Us">
+                <CenterBlock header="Ta kontakt">
                     <p>
-                        You can contact us about partnership details at <a href='mailto:connect@trondheimdc.no'>connect@trondheimdc.no</a>.
+                        Kontakt oss for å bli partner på <a href='mailto:laila.katnosa@dataforeningen.no'>laila.katnosa@dataforeningen.no</a>.
                     </p>
                 </CenterBlock>
             </Section>
