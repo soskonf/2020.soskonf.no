@@ -1,13 +1,13 @@
-# 2019.trondheimdc.no
+# 2019.soskonf.no
 
-This is the repository for 2019.trondheimdc.no. It is a react application.
+This is the repository for 2019.soskonf.no. It is a react application.
 
 ## Setup
 
 You need a relatively new version of node.js. Anything above 6.0 should work.
 
-    git clone git@github.com:TrondheimDeveloperConference/2019.trondheimdc.no.git
-    cd 2019.trondheimdc.no
+    git clone git@github.com:soskonf/2019.soskonf.no.git
+    cd 2019.soskonf.no
     npm i
     
 ## Technologies
