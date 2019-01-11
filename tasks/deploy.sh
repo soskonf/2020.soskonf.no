@@ -39,10 +39,10 @@ git push -fq origin master > /dev/null
 
 echo "Done deploying"
 
-if [[ $TRAVIS_BRANCH == "master" ]]; then
-    curl -X POST --data-urlencode 'payload={"channel": "#website", "username": "[PROD] Deploy-bot", "text": "https://2019.soskonf.no ble deployet :)", "icon_emoji": ":heart:"}' ${slackuri} > /dev/null
-else
-    curl -X POST --data-urlencode 'payload={"channel": "#website", "username": "[TEST] Deploy-bot", "text": "http://test.soskonf.no ble deployet :)", "icon_emoji": ":yellow_heart:"}' ${slackuri} > /dev/null
-fi;
+#if [[ $TRAVIS_BRANCH == "master" ]]; then
+#    curl -X POST --data-urlencode 'payload={"channel": "#website", "username": "[PROD] Deploy-bot", "text": "https://2019.soskonf.no ble deployet :)", "icon_emoji": ":heart:"}' ${slackuri} > /dev/null
+#else
+#    curl -X POST --data-urlencode 'payload={"channel": "#website", "username": "[TEST] Deploy-bot", "text": "http://test.soskonf.no ble deployet :)", "icon_emoji": ":yellow_heart:"}' ${slackuri} > /dev/null
+#fi;
 
-echo "Done slack-notifying"
+#echo "Done slack-notifying"
