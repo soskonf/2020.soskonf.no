@@ -1,5 +1,6 @@
 export default [
-    {name: 'Kantega', logo: 'kantega.svg', url: 'http://www.kantega.no/'},
-    {name: 'Sopra Steria', logo: 'soprasteria.svg', url: 'http://www.soprasteria.no/'},
-    {name: 'ITsjefen', logo: 'itsjefen.svg', url: 'http://www.itsjefen.no/'},
+    {name: 'Kantega', logo: 'kantega.svg', url: 'https://www.kantega.no/'},
+    {name: 'ITsjefen', logo: 'itsjefen.svg', url: 'https://www.itsjefen.no/'},
+    {name: 'Sintef', logo: 'sintef.svg', url: 'https://www.sintef.no/'},
+    {name: 'Sopra Steria', logo: 'soprasteria.svg', url: 'https://www.soprasteria.no/'},
 ];
