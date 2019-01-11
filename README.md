@@ -26,7 +26,7 @@ Run in watch mode:
     
 ## Deployment
 
-Everything is automatic. The `develop` branch is automatically deployed to https://test.trondheimdc.no
-and `master` is automatically deployed to https://2019.trondheimdc.no. Push to `develop` (or a separate
+Everything is automatic. The `develop` branch is automatically deployed to https://test.soskonf.no
+and `master` is automatically deployed to https://2019.soskonf.no. Push to `develop` (or a separate
 branch if you would rather do that) and create a pull request from `develop` to `master` when you want
 to deploy to production.

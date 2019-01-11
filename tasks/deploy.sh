@@ -23,12 +23,12 @@ git config --global user.email "travic@travis-ci.org"
 git config --global user.name "Travis"
 
 if [[ $TRAVIS_BRANCH == "master" ]]; then
-    git clone --quiet https://${GITHUB_TOKEN}@github.com/${GH_USER}/${GH_REPO_PROD}.git 2019.trondheimdc.no > /dev/null
+    git clone --quiet https://${GITHUB_TOKEN}@github.com/${GH_USER}/${GH_REPO_PROD}.git 2019.soskonf.no > /dev/null
 else
-    git clone --quiet https://${GITHUB_TOKEN}@github.com/${GH_USER}/${GH_REPO_TEST}.git 2019.trondheimdc.no > /dev/null
+    git clone --quiet https://${GITHUB_TOKEN}@github.com/${GH_USER}/${GH_REPO_TEST}.git 2019.soskonf.no > /dev/null
 fi;
 
-cd 2019.trondheimdc.no
+cd 2019.soskonf.no
 cp -R $HOME/dist/* .
 
 echo "Allow files with underscore https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/" > .nojekyll
@@ -40,9 +40,9 @@ git push -fq origin master > /dev/null
 echo "Done deploying"
 
 if [[ $TRAVIS_BRANCH == "master" ]]; then
-    curl -X POST --data-urlencode 'payload={"channel": "#website", "username": "[PROD] Deploy-bot", "text": "https://2019.trondheimdc.no ble deployet :)", "icon_emoji": ":heart:"}' ${slackuri} > /dev/null
+    curl -X POST --data-urlencode 'payload={"channel": "#website", "username": "[PROD] Deploy-bot", "text": "https://2019.soskonf.no ble deployet :)", "icon_emoji": ":heart:"}' ${slackuri} > /dev/null
 else
-    curl -X POST --data-urlencode 'payload={"channel": "#website", "username": "[TEST] Deploy-bot", "text": "http://test.trondheimdc.no ble deployet :)", "icon_emoji": ":yellow_heart:"}' ${slackuri} > /dev/null
+    curl -X POST --data-urlencode 'payload={"channel": "#website", "username": "[TEST] Deploy-bot", "text": "http://test.soskonf.no ble deployet :)", "icon_emoji": ":yellow_heart:"}' ${slackuri} > /dev/null
 fi;
 
 echo "Done slack-notifying"

@@ -1,8 +1,8 @@
 import React from 'react';
-import { CLeftBlock} from '../components/centeredblock';
-import { Section } from '../components/Section/Section';
-import { LeftBlock} from '../components/Block/Block';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import {CLeftBlock} from '../components/centeredblock';
+import {Section} from '../components/Section/Section';
+import {LeftBlock} from '../components/Block/Block';
+import {Col, Grid, Row} from 'react-flexbox-grid';
 import Page from '../components/Page/Page';
 import PageHeader from '../components/PageHeader/PageHeader';
 
@@ -27,7 +27,7 @@ function MonetaryPolicy(props: MonetaryPolicyProps) {
                             The first thing to note is that you need to <em>apply </em>
                             for reminbursement of costs. This is necessary for our budget planning. If you require
                             financial support, please reach out
-                            to <a href='mailto:connect@trondheimdc.no'>connect@trondheimdc.no</a> after
+                            to <a href='mailto:program@soskonf.no'>program@soskonf.no</a> after
                             your session or workshop was accepted.
                         </p>
                         <p>
@@ -43,7 +43,7 @@ function MonetaryPolicy(props: MonetaryPolicyProps) {
                 <LeftBlock header="Confirmation & reimbursement">
                         <p>
                             Applications <strong><em>must</em></strong> be confirmed explicitly
-                            via <a href='mailto:connect@trondheimdc.no'>connect@trondheimdc.no</a> and are
+                            via <a href='mailto:program@soskonf.no'>program@soskonf.no</a> and are
                             only accepted prior to our conference. Reimbursements are
                             provided after the conference. For this, we require you
                             to send us copies of all receipts, the name of your bank
