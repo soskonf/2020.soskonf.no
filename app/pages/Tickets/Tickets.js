@@ -1,21 +1,11 @@
 //@flow
 import * as React from 'react';
-import { Heading, LargeHeading, SmallHeading, Container, Pitch } from '../../components/page';
-import { Block, Content, SubHeader, P} from '../../components/block';
-import { CBlock, CHeader, CContent } from '../../components/centeredblock';
-import { Link } from '../../components/link';
-import { Section } from '../../components/Section/Section';
-import { CenterBlock, LeftBlock, ImageBlock } from '../../components/Block/Block';
-import { Header } from '../../components/Header/Header';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import Button from '../../components/Button/Button';
+import {P} from '../../components/block';
+import {Section} from '../../components/Section/Section';
+import {CenterBlock} from '../../components/Block/Block';
+import {Col, Grid, Row} from 'react-flexbox-grid';
 import Page from '../../components/Page/Page';
 import PageHeader from '../../components/PageHeader/PageHeader';
-import Timeline from '../../components/timeline';
-import Youtube from '../../components/youtube';
-import tickets1 from '../../assets/tickets_1.jpg';
-import tickets2 from '../../assets/tickets_2.jpg';
-import tickets3 from '../../assets/partners_1.jpg';
 import './Tickets.less';
 
 type TicketsProps = {
@@ -24,17 +14,17 @@ type TicketsProps = {
 function Tickets(props: TicketsProps) {
     return (
         <Page name='tickets'>
-	        <PageHeader subHeader="Britannia Hotell, 7.-8. Mai">Billetter til Sikkerhet og Sårbarhet 2019</PageHeader>
+	        <PageHeader subHeader="til Sikkerhet og Sårbarhet 2019">Kjøp billetter</PageHeader>
 	        <Section>
-                <CenterBlock header="Kjøp billetter">
+                <CenterBlock header="Partner pris">
 	                    <div className="partner-prices-main">NOK 3.500,-</div>
 	                    <P>
 	                        Billetten gir full tilgang til konferansen <br />
 	                        <span className="partners__vat">priser er u/mva</span>
-	                    </P>{/*
+	                    </P>
 	                    <P>
-                            <a className='button button--transparent' href="https://goo.gl/forms/Eb2aOAjeT3v72iNa2">Add your name to the waiting list</a>
-	                    </P>*/}
+                            <a className='button button--transparent' href="">Kjøp billett via Hoopla</a>
+	                    </P>
 	            </CenterBlock>
 	        </Section>
 

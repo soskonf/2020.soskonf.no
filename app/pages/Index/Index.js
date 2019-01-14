@@ -1,14 +1,12 @@
 //@flow
 import * as React from 'react';
 import Container from '../../components/Container/Container';
-import { Section } from '../../components/Section/Section';
+import {Section} from '../../components/Section/Section';
 import Banner from '../../components/Banner/Banner';
-import Stats from '../../components/Stats/Stats';
-import { LeftBlock, ImageBlock } from '../../components/Block/Block';
-import { Header } from '../../components/Header/Header';
+import {LeftBlock} from '../../components/Block/Block';
+import {Header} from '../../components/Header/Header';
 import Page from '../../components/Page/Page.js';
 import './Index.less';
-import Meetups from "./Meetups";
 
 function Index() {
     return (
@@ -27,9 +25,9 @@ function Index() {
                         Ikke kommersiell konferanse der all fortjeneste går til next års konferanse eller andre aktiviter igjennom året.
                     </p>
                 </LeftBlock>
-            </Section>
-            <Section alternate>
-                <Stats />
+                {/*<Section fluid>*/}
+                    {/*<ImageBlock image={partners1} alt="Britannia Kongress" />*/}
+                {/*</Section>*/}
             </Section>
         </Page>
     );
