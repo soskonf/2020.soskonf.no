@@ -4,6 +4,48 @@ import Page from '../../components/Page/Page';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import {Section} from '../../components/Section/Section';
 import {CenterBlock, LeftBlock} from '../../components/Block/Block';
+import {Header} from '../../components/Header/Header';
+import partners from '../../data/partners';
+import {Col, Grid, Row} from 'react-flexbox-grid';
+import {Link} from "../../components/link";
+
+function shuffle(o){
+    for(let j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+}
+
+const imagesContext = require.context('../../assets/partners-19', false, /\.svg$/);
+const images = imagesContext.keys().map(image => (
+    {context: imagesContext(image), filename: image}
+));
+
+function getimage(images, image) {
+    return images.find(img => img.filename.indexOf(image) >= 0);
+}
+
+type PartnerListProps = {
+    partners: []
+}
+
+function PartnerList(props: PartnerListProps) {
+    const shuffled = shuffle(props.partners);
+    return (
+        <Grid fluid>
+            <Row className="partners-list-container">
+                {shuffled.map((partner) => {
+                    return (
+                        <Col key={partner.name}>
+                            <Link href={partner.url} className="partners-list-item">
+                                <img className="partner-logo" src={getimage(images, partner.logo).context} alt={partner.name}/>
+                            </Link>
+                        </Col>
+                    )
+                })}
+            </Row>
+        </Grid>
+    );
+}
+
 
 function AboutSection() {
     return (
@@ -16,6 +58,7 @@ function AboutSection() {
                 </p>
             </LeftBlock>
         </Section>
+
     );
 }
 
@@ -77,6 +120,15 @@ function ProgramSection() {
     );
 }
 
+function PartnerSection() {
+    return (
+        <Section alternate pixel>
+            <Header align='center'>Partnere</Header>
+            <PartnerList partners={partners} />
+        </Section>
+    );
+}
+
 
 function QuestionSection() {
     return (
@@ -97,13 +149,14 @@ function QuestionSection() {
 function Info() {
     return (
         <Page name='info'>
-            <PageHeader subHeader="7.-8. Mai. 2019" subSubHeader="Trondheim - Norge">Velkommen til Sikkerhet og Sårbarhet 2019</PageHeader>
+            <PageHeader subHeader="7.-8. Mai" subSubHeader="Trondheim">Velkommen til Sikkerhet og Sårbarhet 2019</PageHeader>
             <AboutSection />
             {/*<TicketSection />*/}
             {/*<ImageBlock />*/}
             <BetterExplorerSection />
             {/*<ImageBlock />*/}
             {/*<ProgramSection />*/}
+            <PartnerSection />
             {/*<ImageBlock />*/}
             {/*<AweZoneSection />*/}
             <QuestionSection />

@@ -1,12 +1,10 @@
 //@flow
 import * as React from 'react';
-import Container from '../Container/Container';
 import Link from '../Link/Link';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import Button from '../../components/Button/Button';
+import {Col, Grid, Row} from 'react-flexbox-grid';
 import classnames from 'classnames';
-import { connect } from 'react-redux';
-import { Menu } from 'react-feather';
+import {connect} from 'react-redux';
+import {Menu} from 'react-feather';
 import SOSLogo from '../../assets/logo/logo.png';
 import SOSLogo_white from '../../assets/logo/logo-white.png';
 import './Navigation.less';
@@ -143,7 +141,7 @@ class Navigation extends React.Component<NavigationProps, NavigationState> {
         return (
             <Col>
                 <Row middle="xs">
-                    <NavItem active={this.isActiveNavItem("/info")} link="/info">INFO</NavItem>
+                    {/*<NavItem active={this.isActiveNavItem("/info")} link="/info">INFO</NavItem>*/}
                     <NavItem active={this.isActiveNavItem("/tickets")} link="/tickets">BILLETTER</NavItem>
                     <NavItem active={this.isActiveNavItem("/speakers")} link="/speakers">FOREDRAGSHOLDERE</NavItem>
                     <NavItem active={this.isActiveNavItem("/program")} link="/program">PROGRAM</NavItem>

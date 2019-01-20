@@ -1,5 +1,4 @@
 import React from 'react';
-import index from './pages/Index/Index.js';
 import partners from './pages/Partners/Partners.js';
 import notFound from './pages/NotFound/NotFound.js';
 import speakers from './pages/Speakers/Speakers.js';
@@ -9,7 +8,7 @@ import tipsAndTricks from './pages/tips-and-tricks';
 import tickets from './pages/Tickets/Tickets.js';
 import program from './pages/Program/Program.js';
 import programDetails from './pages/Program/ProgramDetails.js';
-import { store } from './store';
+import {store} from './store';
 import info from './pages/Info/Info.js';
 import Conduct from "./pages/Info/Conduct";
 
@@ -24,7 +23,7 @@ const routes = compile({
     '/conduct': Conduct,
     '/program': program,
     '/program/([a-zA-Z0-9_-]+)': programDetails,
-    '/': index
+    '/': info
 });
 
 function compile(routes) {
