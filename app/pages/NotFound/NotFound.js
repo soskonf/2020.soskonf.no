@@ -2,34 +2,23 @@
 import * as React from 'react';
 import Page from '../../components/Page/Page';
 import PageHeader from '../../components/PageHeader/PageHeader';
-import { LeftBlock } from '../../components/Block/Block';
-import { Section } from '../../components/Section/Section';
+import {LeftBlock} from '../../components/Block/Block';
+import {Section} from '../../components/Section/Section';
 
 function NotFound() {
     return (
         <Page name='404'>
-            <PageHeader subHeader="Well, this is embarrassing...">Void 0</PageHeader>
+            <PageHeader subHeader="Ukjent side...">404</PageHeader>
             <Section>
-                <LeftBlock header="Error 404">
+                <LeftBlock header="Feilcode 404">
                     <p>
-                        We seem to somehow have lost the page you are looking for.
-                        If you are a technical person, this is what you might usually
-                        refer to as a classical 404 response code.
-                    </p>
-                    <p>
-                        We are of course
-                        using advanced technology to keep things like these from
-                        happening, but every now and then technology (or we...) fails.
-                    </p>
-                    <p>
-                        If you have a lot of time on your hands (or are just really kind),
-                        we would really appreciate it if you <a href='mailto:program@soskonf.no'>
-                        tell us about it</a>.
+                        Det oppstod en feil. Hvis du vet at dette burde ha fungert, ta kontakt
+                        på <a href='mailto:program@soskonf.no'>program@soskonf.no</a>.
                     </p>
                 </LeftBlock>
             </Section>
         </Page>
-    )
+    );
 }
 
 export default NotFound;
