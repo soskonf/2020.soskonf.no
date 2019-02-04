@@ -16,14 +16,16 @@ function Tickets(props: TicketsProps) {
         <Page name='tickets'>
 	        <PageHeader subHeader="til Sikkerhet og Sårbarhet 2019">Kjøp billetter</PageHeader>
 	        <Section>
-                <CenterBlock header="Partner pris">
-	                    <div className="partner-prices-main">NOK 3.500,-</div>
+                <CenterBlock header="">
+	                    <div className="partner-prices-main"></div>
+{/*
 	                    <P>
 	                        Billetten gir full tilgang til konferansen <br />
 	                        <span className="partners__vat">priser er u/mva</span>
 	                    </P>
+*/}
 	                    <P>
-                            <a className='button button--transparent' href="">Kjøp billett via Hoopla</a>
+                            <a className='button button--transparent' href="https://embedded-trd.hoopla.no/sales/3657439979">Kjøp billett via Hoopla</a>
 	                    </P>
 	            </CenterBlock>
 	        </Section>
