@@ -91,7 +91,7 @@ function Partners() {
                             En konferansebillett som gir tilgang til hele konferansen og middagen.
                         </li>
                         <li className='list__item'>
-                            Ytterligere billetter til redusert partner pris.
+                            Ytterligere billetter til redusert partnerpris.
                         </li>
                         <li className='list__item'>
                             Logoen på <a href='https://2019.soskonf.no'>nettsidene</a>,
