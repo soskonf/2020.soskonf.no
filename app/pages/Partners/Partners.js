@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {Col, Grid, Row} from 'react-flexbox-grid';
-import partners1 from '../../assets/partners_1.jpg';
-import partners2 from '../../assets/partners_2.jpg';
+import partners1 from '../../assets/britannia-fasade1.jpg';
 import {CenterBlock, ImageBlock, LeftBlock} from '../../components/Block/Block';
 import {Header, SubHeader} from '../../components/Header/Header';
 import Page from '../../components/Page/Page';
@@ -67,43 +66,45 @@ function Partners() {
                 <PartnerList partners={partners} />
             </Section>
             <Section fluid>
-                <ImageBlock image={partners2} alt="Britannia Kongress" />
+                <ImageBlock image={partners1} alt="Britannia Kongress" />
             </Section>
             <Section>
                 <CenterBlock header="Utstillerområdet">
                     <p>
                         Alle partnere har stands på messeområdet, som er plassert rett utenfor kongresshallen.
-                        I pausene fylles utstillerområde med de fleste deltagerne.
+                        I pausene fylles utstillerområde med de fleste deltakerne.
                     </p>
                 </CenterBlock>
             </Section>
 
             <Section dark>
-                <LeftBlock header="Partner options">
+                <LeftBlock header="Partner alterntiver">
                     <p>
                         Utstillerområde på Britannia Hotell går oss god plass og en unik opplevelse.
                     </p>
-                    <SubHeader>Innkludert i partneravtalen</SubHeader>
+                    <SubHeader>Inkludert i partneravtalen</SubHeader>
                     <ul className='list'>
                         <li className='list__item'>
                             Stand (9 kvadrat, 3m x 3m).
                         </li>
                         <li className='list__item'>
-                            En konferansebillet som gir tilgang til hele konferansen og middagen.
+                            En konferansebillett som gir tilgang til hele konferansen og middagen.
                         </li>
                         <li className='list__item'>
                             Ytterligere billetter til redusert partner pris.
                         </li>
                         <li className='list__item'>
-                            Logoen på <a href='https://2019.soskonf.no'>2019.soskonf.no</a>,
-                            konferanseområdet, i programmet og all reklame materiell.
+                            Logoen på <a href='https://2019.soskonf.no'>nettsidene</a>,
+                            konferanseområdet, i programmet og alt reklamemateriell.
                         </li>
                     </ul>
                 </LeftBlock>
             </Section>
+{/*
             <Section fluid>
-                <ImageBlock image={partners1} alt="Britannia Kongress" />
+                <ImageBlock image={partners2} alt="Britannia Kongress" />
             </Section>
+*/}
             <Section>
                 <CenterBlock header="Ta kontakt">
                     <p>

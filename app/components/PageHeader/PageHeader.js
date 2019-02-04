@@ -1,7 +1,7 @@
 //@flow
 import * as React from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import { Section } from '../Section/Section';
+import {Col, Grid, Row} from 'react-flexbox-grid';
+import {Section} from '../Section/Section';
 import './PageHeader.less';
 
 type PageHeaderProps = {

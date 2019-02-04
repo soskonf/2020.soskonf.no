@@ -2,11 +2,12 @@ import * as React from 'react';
 import Page from '../../components/Page/Page';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import {Section} from '../../components/Section/Section';
-import {CenterBlock, LeftBlock} from '../../components/Block/Block';
+import {CenterBlock, ImageBlock, LeftBlock} from '../../components/Block/Block';
 import {Header} from '../../components/Header/Header';
 import partners from '../../data/partners';
 import {Col, Grid, Row} from 'react-flexbox-grid';
 import {Link} from "../../components/link";
+import britannia from "../../assets/britannia-fasade2.jpg";
 
 function shuffle(o){
     for(let j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
@@ -128,6 +129,19 @@ function PartnerSection() {
     );
 }
 
+function LocationSection() {
+    return (
+        <Section alternate pixel fluid>
+            <Header align='center'>Holdes på ærverdige Britannia Hotell!</Header>
+            <LeftBlock header="Lokasjon">
+                <Section>
+                    <ImageBlock image={britannia} alt="Britannia Kongress" />
+                </Section>
+            </LeftBlock>
+        </Section>
+    );
+}
+
 
 function QuestionSection() {
     return (
@@ -148,14 +162,15 @@ function QuestionSection() {
 function Info() {
     return (
         <Page name='info'>
-            <PageHeader subHeader="7.-8. Mai" subSubHeader="Trondheim">Velkommen til Sikkerhet og Sårbarhet 2019</PageHeader>
+            <PageHeader subHeader="7.-8. Mai" subSubHeader="Britannia Hotell, Trondheim">Sikkerhet og Sårbarhet 2019</PageHeader>
             <AboutSection />
             {/*<TicketSection />*/}
+            <PartnerSection />
             {/*<ImageBlock />*/}
             <BetterExplorerSection />
             {/*<ImageBlock />*/}
+            <LocationSection />
             {/*<ProgramSection />*/}
-            <PartnerSection />
             {/*<ImageBlock />*/}
             {/*<AweZoneSection />*/}
             <QuestionSection />
