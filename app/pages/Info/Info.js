@@ -133,7 +133,7 @@ function LocationSection() {
     return (
         <Section alternate pixel fluid>
             <Header align='center'>Holdes på ærverdige Britannia Hotell!</Header>
-            <LeftBlock header="Lokasjon">
+            <LeftBlock>
                 <Section>
                     <ImageBlock image={britannia} alt="Britannia Kongress" />
                 </Section>
