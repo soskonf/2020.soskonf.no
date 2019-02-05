@@ -1,8 +1,7 @@
 //@flow
 import * as React from 'react';
-import { Section } from '../Section/Section.js';
 import classnames from 'classnames';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import {Col, Grid, Row} from 'react-flexbox-grid';
 import './Block.less';
 
 type BlockProps = {
@@ -28,7 +27,7 @@ function CenterBlock(props: CenterBlockProps) {
 
     let centerBlockClass = classnames({
         'block': true,
-        'center-block-text-center': true 
+        'center-block-text-center': true
     })
 
     let headerRow = props.header ? <Row center="xs"><h1 className="block-header">{props.header}</h1></Row> : null;
@@ -66,13 +65,52 @@ function LeftBlock(props: BlockProps) {
                     <Row center="xs">
                         <Col xs={12} sm={12} md={6} lg={4}>
                             <h1 className={leftBlockHeaderClass}>{props.header}</h1>
-                            {props.image ? 
+                            {props.image ?
                                 <div className="block-image-wrapper">
                                     <div className="block-image">
                                         <img src={props.image} />
                                     </div>
                                 </div>
-                                 : 
+                                 :
+                                 null}
+                        </Col>
+                        <Col className="block-text" xs={12} sm={12} md={6} lg={8}>
+                            {props.children}
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+        </Grid>
+
+    )
+}
+
+function LeftBlockSpeaker(props: BlockProps) {
+
+    let leftBlockClass = classnames({
+        'block': true,
+        'block-alternate': props.alternate
+    })
+
+    let leftBlockHeaderClass = classnames({
+        'block-header': true,
+        'block-header-margin-right': !props.centerHeader,
+    })
+
+    return (
+        <Grid>
+            <Row className={leftBlockClass} center="xs">
+                <Col xs={12} sm={12} md={12} lg={12}>
+                    <Row center="xs">
+                        <Col xs={12} sm={12} md={6} lg={4}>
+                            <h1 className={leftBlockHeaderClass}>{props.header}</h1>
+                            {props.image ?
+                                <div className="block-image-wrapper">
+                                    <div className="block-image">
+                                        <img src={props.image} />
+                                    </div>
+                                </div>
+                                 :
                                  null}
                         </Col>
                         <Col className="block-text" xs={12} sm={12} md={6} lg={8}>

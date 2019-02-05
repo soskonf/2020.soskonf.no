@@ -2,10 +2,12 @@
 import * as React from 'react';
 import Page from '../../components/Page/Page';
 import PageHeader from '../../components/PageHeader/PageHeader';
-import {CenterBlock} from '../../components/Block/Block';
+import {LeftBlock} from '../../components/Block/Block';
 import {Col, Grid, Row} from 'react-flexbox-grid';
 import {Section} from '../../components/Section/Section';
 import './Speakers.less';
+import speaker1 from "../../assets/2019/speakers/beau_woods.jpg";
+import speaker2 from "../../assets/2019/speakers/per_thorsheim.jpg";
 
 type SpeakerProps = {
 }
@@ -36,6 +38,36 @@ const workshops = {
 function Speakers(props: SpeakerProps) {
     return (
         <Page name='speakers'>
+
+            <PageHeader subHeader="">Årets foredragsholdere</PageHeader>
+            <Section>
+                <LeftBlock header="Beau Woods" image={speaker1}>
+                    <p>
+                        Cyber Safety Advocate, <a href="https://www.iamthecavalry.org">I Am the Cavalry</a>
+                    </p>
+                    <p>
+                        Sikkerhetsforsker, Cyber Safty Innovation Fellow i tenkesmien Atlantic Council, og grunder av Stratigos Security.
+                        Medgründer av <a href="https://www.iamthecavalry.org">I Am the Cavalry</a>, en non-profit utdanningsorganisasjon
+                        som jobber med problemer i skjæringspunktet mellom informasjonssikkerhet, samfunnssikkerhet og helse.
+                    </p>
+                </LeftBlock>
+            </Section>
+            <Section>
+                <LeftBlock header="Per Thorsheim" image={speaker2}>
+                    <p>
+                        Sikkerhetssjef og passordekspert
+                    </p>
+                    <p>
+                        Lidenskapelig opptatt av folks dårlige passord, som bidro til at han grunnla http://PasswordsCon.org.
+                        Jobber til daglig som sikkerhetssjef, men er en dreven foredragsholder som vet å fange oppmerksomheten til de fleste.
+                        Mest kjent for å i 2012 avslørte at Linkedin var blitt hacket, samt i 2015 med datingtjenesten Ashley Madison. Han
+                        er sertifisert CISA, CISM, CISSP & ISSAP.
+                    </p>
+                </LeftBlock>
+            </Section>
+
+
+            {/* CfP text 2019
             <PageHeader subHeader="Hold et foredrag på Sikkerhet og Sårbarhet">Call for Presentations</PageHeader>
             <Section>
 	            <CenterBlock header="Om Sikkerhet og Sårbarhet">
@@ -57,6 +89,7 @@ function Speakers(props: SpeakerProps) {
 	                </p>
 	            </CenterBlock>
 	        </Section>
+*/}
 
 
         </Page>
