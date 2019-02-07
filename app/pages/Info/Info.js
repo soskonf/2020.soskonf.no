@@ -5,12 +5,13 @@ import {Section} from '../../components/Section/Section';
 import {CenterBlock, ImageBlock, LeftBlock} from '../../components/Block/Block';
 import {Header} from '../../components/Header/Header';
 import partners from '../../data/partners';
+import speakers from '../../data/speakers';
 import {Col, Grid, Row} from 'react-flexbox-grid';
 import {Link} from "../../components/link";
 import britannia from "../../assets/britannia-fasade2.jpg";
 
-function shuffle(o){
-    for(let j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+function shuffle(o) {
+    for (let j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x) ;
     return o;
 }
 
@@ -36,10 +37,46 @@ function PartnerList(props: PartnerListProps) {
                     return (
                         <Col key={partner.name}>
                             <Link href={partner.url} className="partners-list-item">
-                                <img className="partner-logo" src={getimage(images, partner.logo).context} alt={partner.name}/>
+                                <img className="partner-logo" src={getimage(images, partner.logo).context}
+                                     alt={partner.name}/>
                             </Link>
                         </Col>
-                    )
+                    );
+                })}
+            </Row>
+        </Grid>
+    );
+}
+
+const speakerImagesContext = require.context('../../assets/2019/speakers', false, /\.jpg$/);
+const speakerImages = speakerImagesContext.keys().map(image => (
+    {context: speakerImagesContext(image), filename: image}
+));
+
+type SpeakerListProps = {
+    speakers: []
+}
+
+function SpeakerList(props: SpeakerListProps) {
+    const shuffled = shuffle(props.speakers);
+    return (
+        <Grid fluid>
+            <Row className="partners-list-container">
+                {shuffled.map((speaker) => {
+                    return (
+                        <Col key={speaker.name}>
+                            <Link href={speaker.url} className="speakers-list-item">
+                                <div className="block-image-wrapper">
+                                    <div className="block-image-speaker">
+                                        <img className="partner-logo"
+                                             src={getimage(speakerImages, speaker.image).context} title={speaker.name}
+                                             alt={speaker.name}/>
+                                    </div>
+                                </div>
+
+                            </Link>
+                        </Col>
+                    );
                 })}
             </Row>
         </Grid>
@@ -67,13 +104,15 @@ function TicketSection() {
         <Section>
             <LeftBlock header="Første steg: kjøp billett!">
                 <p>
-                    For å delta trenger du en billet. Billetten gir deg tilgang til hele konferansen. Billettene er nå lagt ut for salg. Bestiller du tidlig får du Early-Bird rabatt, bestill nå!
+                    For å delta trenger du en billet. Billetten gir deg tilgang til hele konferansen. Billettene er nå
+                    lagt ut for salg. Bestiller du tidlig får du Early-Bird rabatt, bestill nå!
                 </p>
             </LeftBlock>
             <CenterBlock>
                 <p>
-                    <br />
-                    <a className='button button--transparent' href="/tickets">Kjøpt billett til Sikkerhet og Sårbarhet 2019 nå!</a>
+                    <br/>
+                    <a className='button button--transparent' href="/tickets">Kjøpt billett til Sikkerhet og Sårbarhet
+                        2019 nå!</a>
                 </p>
             </CenterBlock>
         </Section>
@@ -90,7 +129,8 @@ function BetterExplorerSection() {
             </LeftBlock>
             <LeftBlock header="Middag og underholdning">
                 <p>
-                    Etter en dag med gode foredrag og mye diskusjon, så vil det smake med en god middag og litt underholdning.
+                    Etter en dag med gode foredrag og mye diskusjon, så vil det smake med en god middag og litt
+                    underholdning.
                 </p>
             </LeftBlock>
             <LeftBlock header="Nettverking">
@@ -124,7 +164,16 @@ function PartnerSection() {
     return (
         <Section alternate pixel>
             <Header align='center'>Partnere</Header>
-            <PartnerList partners={partners} />
+            <PartnerList partners={partners}/>
+        </Section>
+    );
+}
+
+function SpeakerSection() {
+    return (
+        <Section alternate pixel>
+            <Header align='center'>Foredragsholdere</Header>
+            <SpeakerList speakers={speakers}/>
         </Section>
     );
 }
@@ -135,7 +184,7 @@ function LocationSection() {
             <Header align='center'>Holdes på ærverdige Britannia Hotell!</Header>
             <LeftBlock>
                 <Section>
-                    <ImageBlock image={britannia} alt="Britannia Kongress" />
+                    <ImageBlock image={britannia} alt="Britannia Kongress"/>
                 </Section>
             </LeftBlock>
         </Section>
@@ -146,6 +195,13 @@ function LocationSection() {
 function QuestionSection() {
     return (
         <Section>
+            <LeftBlock header="Lokasjon">
+                <ImageBlock image={britannia} alt="Britannia Kongress"/>
+                <p>
+                    Britannia hotell gjenåpnes 1. April 2019 etter en større rehabilitering, akkurat i tide for konferasen.
+                    Det er allerede høyt påtrykk for booking av rom, så hvis du ønsker å bo her under konferansen så er
+                    det viktig å reservere tidlig.</p>
+            </LeftBlock>
             <LeftBlock header="Spørsmål?">
                 <p>
                     Ta kontakt på <a href='mailto:program@soskonf.no'>program@soskonf.no</a> hvis du har noen spørsmål.
@@ -162,18 +218,20 @@ function QuestionSection() {
 function Info() {
     return (
         <Page name='info'>
-            <PageHeader subHeader="7.-8. Mai" subSubHeader="Britannia Hotell, Trondheim">Sikkerhet og Sårbarhet 2019</PageHeader>
-            <AboutSection />
+            <PageHeader subHeader="7.-8. Mai" subSubHeader="Britannia Hotell, Trondheim">Sikkerhet og Sårbarhet
+                2019</PageHeader>
+            <AboutSection/>
             {/*<TicketSection />*/}
-            <PartnerSection />
+            <PartnerSection/>
             {/*<ImageBlock />*/}
-            <BetterExplorerSection />
+            <BetterExplorerSection/>
+            <SpeakerSection/>
             {/*<ImageBlock />*/}
-            <LocationSection />
+            {/*<LocationSection />*/}
             {/*<ProgramSection />*/}
             {/*<ImageBlock />*/}
             {/*<AweZoneSection />*/}
-            <QuestionSection />
+            <QuestionSection/>
         </Page>
     );
 }
