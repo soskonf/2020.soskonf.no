@@ -8,6 +8,7 @@ import {Section} from '../../components/Section/Section';
 import './Speakers.less';
 import speaker1 from "../../assets/2019/speakers/beau_woods.jpg";
 import speaker2 from "../../assets/2019/speakers/per_thorsheim.jpg";
+import speaker3 from "../../assets/2019/speakers/martha_eike.jpg";
 
 type SpeakerProps = {
 }
@@ -62,6 +63,19 @@ function Speakers(props: SpeakerProps) {
                         Jobber til daglig som sikkerhetssjef, men er en dreven foredragsholder som vet å fange oppmerksomheten til de fleste.
                         Mest kjent for å i 2012 avslørte at Linkedin var blitt hacket, samt i 2015 med datingtjenesten Ashley Madison. Han
                         er sertifisert CISA, CISM, CISSP & ISSAP.
+                    </p>
+                </LeftBlock>
+            </Section>
+            <Section>
+                <LeftBlock header="Martha Eike" image={speaker3}>
+                    <p>
+                        Fagdirektør og teknolog
+                    </p>
+                    <p>
+                        Utdannet dataingeniør med ni års erfaring fra QA og programvareutvikling i privat sektor. Hun
+                        har opparbeidet seg erfaring med skytjenester, digitalisering av offentlig sektor,
+                        opplæringssektoren, innebygd personvern, vurdering av personvernkonsekvenser og Big Data.
+                        Martha koordinerer det utadrettede arbeidet med informasjonssikkerhet.
                     </p>
                 </LeftBlock>
             </Section>

@@ -71,8 +71,8 @@ function Partners() {
             <Section>
                 <CenterBlock header="Utstillerområdet">
                     <p>
-                        Alle partnere har stands på messeområdet, som er plassert rett utenfor kongresshallen.
-                        I pausene fylles utstillerområde med de fleste deltakerne.
+                        Alle partnere har stands på utstillerområde, som er plassert rett utenfor kongresshallen.
+                        I pausene fylles område med de fleste deltakerne.
                     </p>
                 </CenterBlock>
             </Section>
