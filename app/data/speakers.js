@@ -1,5 +1,5 @@
 export default [
-    {name: 'Beau Woods', image: 'beau_woods.jpg', url: 'https://twitter.com/beauwoods'},
-    {name: 'Per Thorsheim', image: 'per_thorsheim.jpg', url: 'https://twitter.com/thorsheim'},
-    {name: 'Martha Eike', image: 'martha_eike.jpg', url: 'https://twitter.com/marthaeike'}
+    {name: 'Beau Woods', title: 'Cyber Safety Advocate, I Am the Cavalry', image: 'beau_woods.jpg', url: 'https://twitter.com/beauwoods', bio: 'Sikkerhetsforsker, Cyber Safty Innovation Fellow i tenkesmien Atlantic Council, og grunder av Stratigos Security. Medgründer av I Am the Cavalry, en non-profit utdanningsorganisasjon som jobber med problemer i skjæringspunktet mellom informasjonssikkerhet, samfunnssikkerhet og helse.'},
+    {name: 'Per Thorsheim', title: 'Sikkerhetssjef og passordekspert', image: 'per_thorsheim.jpg', url: 'https://twitter.com/thorsheim' , bio: 'Lidenskapelig opptatt av folks dårlige passord, som bidro til at han grunnla http://PasswordsCon.org. Jobber til daglig som sikkerhetssjef, men er en dreven foredragsholder som vet å fange oppmerksomheten til de fleste.  Mest kjent for å i 2012 avslørte at Linkedin var blitt hacket, samt i 2015 med datingtjenesten Ashley Madison. Han er sertifisert CISA, CISM, CISSP & ISSAP.'},
+    {name: 'Martha Eike', title: 'Fagdirektør, Datatilsynet', image: 'martha_eike.jpg', url: 'https://twitter.com/marthaeike', bio: 'Utdannet dataingeniør med ni års erfaring fra QA og programvareutvikling i privat sektor. Hun har opparbeidet seg erfaring med skytjenester, digitalisering av offentlig sektor, opplæringssektoren, innebygd personvern, vurdering av personvernkonsekvenser og Big Data. Martha koordinerer det utadrettede arbeidet med informasjonssikkerhet.'}
 ];
