@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  javazone-react:
+  soskonf-react:
     image: node:alpine
     command: "npm start"
     volumes:
