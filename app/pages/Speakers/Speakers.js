@@ -57,7 +57,7 @@ function Speakers(props: SpeakerProps) {
             <PageHeader subHeader="">Årets foredragsholdere</PageHeader>
             {shuffled.map((speaker) => {
                 return (
-                    <Section>
+                    <Section key={speaker.name}>
                         <LeftBlock header={speaker.name} image={getimage(speakerImages, speaker.image).context}>
                             <p>
                                 {speaker.title}
