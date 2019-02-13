@@ -38,6 +38,7 @@
     "postcss-loader": "^2.0.8",
     "q": "^1.5.1",
     "react": "^16.8.1",
+    "react-app-polyfill": "^0.2.1",
     "react-dom": "^16.8.1",
     "react-feather": "^1.1.6",
     "react-flexbox-grid": "^2.1.2",

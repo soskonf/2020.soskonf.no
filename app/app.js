@@ -1,14 +1,10 @@
-import reactFlexboxGrid from 'react-flexbox-grid';
-import styles from './styles/App.less';
+import 'react-app-polyfill/ie11';
 import 'whatwg-fetch';
 import 'es6-promise/auto';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import * as polyfill from './components/polyfill';
-import * as favicons from './favicon';
-import { render } from 'react-dom';
+import {render} from 'react-dom';
 import {Provider} from 'react-redux';
-import { store } from './store.js';
-import routes from './routes';
+import {store} from './store.js';
 import Root from './root';
 
 const container = document.querySelector('#app');
