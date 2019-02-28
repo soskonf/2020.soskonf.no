@@ -199,9 +199,13 @@ function QuestionSection() {
             <LeftBlock header="Lokasjon">
                 <ImageBlock image={britannia} alt="Britannia Kongress"/>
                 <p>
-                    Britannia hotell gjenåpnes 1. April 2019 etter en større rehabilitering, akkurat i tide for konferasen.
+                    Britannia hotell gjenåpnes 1. April 2019 etter en større rehabilitering, akkurat i tide for konferansen.
                     Det er allerede høyt påtrykk for booking av rom, så hvis du ønsker å bo her under konferansen så er
-                    det viktig å reservere tidlig.</p>
+                    det viktig å reservere tidlig.
+                </p>
+                <p>
+                    Kontakt <a href='mailto:contact@britannia.no'>contact@britannia.no</a> eller ring 73 800 800 og oppgi <span style={{color: 'red'}}>Data060519</span> for hotellrom til spesialpris, tilbudet gjelder til 6. april.
+                </p>
             </LeftBlock>
             <LeftBlock header="Spørsmål?">
                 <p>
