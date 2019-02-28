@@ -82,16 +82,32 @@ function Partners() {
                     <p>
                         Utstillerområde på Britannia Hotell går oss god plass og en unik opplevelse.
                     </p>
-                    <SubHeader>Inkludert i partneravtalen</SubHeader>
+                    <SubHeader>Hovedspartner</SubHeader>
                     <ul className='list'>
                         <li className='list__item'>
-                            Stand (9 kvadrat, 3m x 3m).
+                            Stand (6 m²). Velge standplass først.
                         </li>
                         <li className='list__item'>
                             En konferansebillett som gir tilgang til hele konferansen og middagen.
                         </li>
                         <li className='list__item'>
-                            Ytterligere billetter til redusert partnerpris.
+                            Fem billetter til redusert partnerpris.
+                        </li>
+                        <li className='list__item'>
+                            Logoen på <a href='https://2019.soskonf.no'>nettsidene</a>,
+                            konferanseområdet, i programmet og alt reklamemateriell.
+                        </li>
+                    </ul>
+                    <SubHeader>Partner</SubHeader>
+                    <ul className='list'>
+                        <li className='list__item'>
+                            Stand (4 m²).
+                        </li>
+                        <li className='list__item'>
+                            En konferansebillett som gir tilgang til hele konferansen og middagen.
+                        </li>
+                        <li className='list__item'>
+                            To billetter til redusert partnerpris.
                         </li>
                         <li className='list__item'>
                             Logoen på <a href='https://2019.soskonf.no'>nettsidene</a>,
