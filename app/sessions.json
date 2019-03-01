@@ -1,56 +1,72 @@
 {
   "sessions": [
     {
-      "intendedAudience": "For hvem",
-      "startTimeZulu": "2019-05-07T09:00Z",
-      "endTimeZulu": "2019-05-07T10:00Z",
-      "startTime": "2019-05-07T10:00",
-      "endTime": "2019-05-07T11:00",
+      "startTime": "2019-05-07T09:00",
+      "endTime": "2019-05-07T10:00",
       "length": "60",
-      "keywords": [],
-      "format": "presentation",
       "language": "no",
-      "sessionId": "9a5a84def65d4c3880e0154c0adf50e5",
-      "abstract": "ingress",
-      "published": "true",
-      "video": "https://vimeo.com/album/4133413/video/181925293",
-      "title": "Keynote Dag 1",
+      "sessionId": "",
+      "abstract": "",
+      "title": "Registrering og morgenbuffet",
       "room": "Kongressalen",
-      "conferenceId": "3baa25d3-9cca-459a-90d7-9fc349209289",
       "speakers": [
         {
-          "name": "Navn",
-          "bio": "Om Navn",
-          "sessionId": "9a5a84def65d4c3880e0154c0adf50e5"
+          "name": "",
+          "bio": "",
+          "sessionId": ""
         }
-      ],
-      "slug": "keynote"
+      ]
     },
     {
-      "intendedAudience": "For hvem",
-      "startTimeZulu": "2019-05-08T07:00Z",
-      "endTimeZulu": "2019-05-08T08:00Z",
+      "startTime": "2019-05-07T10:00",
+      "endTime": "2019-05-07T10:15",
+      "length": "15",
+      "language": "no",
+      "sessionId": "D1_1",
+      "abstract": "Åpning av konferansen.",
+      "title": "Velkommen",
+      "room": "Kongressalen",
+      "speakers": [
+        {
+          "name": "Espen A. Fossen",
+          "bio": "Leder av programkomiteen og Sikkerhetssjef i Kantega.",
+          "sessionId": "D1_1"
+        }
+      ]
+    },
+    {
+      "startTime": "2019-05-07T10:15",
+      "endTime": "2019-05-07T10:45",
+      "length": "30",
+      "language": "no",
+      "sessionId": "D1_2",
+      "abstract": "Åpning av konferansen.",
+      "title": "Ny IKT-sikkerhetslov",
+      "room": "Kongressalen",
+      "speakers": [
+        {
+          "name": "Marie Moe",
+          "bio": "Leder av programkomiteen og Sikkerhetssjef i Kantega.",
+          "sessionId": "D1_1"
+        }
+      ]
+    },
+    {
       "startTime": "2019-05-08T09:00",
       "endTime": "2019-05-08T10:00",
       "length": "60",
-      "keywords": [],
-      "format": "presentation",
       "language": "no",
-      "sessionId": "9a5a84def65d4c3880e0154c0adf50e5",
+      "sessionId": "D2_1",
       "abstract": "ingress",
-      "published": "true",
-      "video": "https://vimeo.com/album/4133413/video/181925293",
       "title": "Keynote Dag 2",
       "room": "Kongressalen",
-      "conferenceId": "3baa25d3-9cca-459a-90d7-9fc349209289",
       "speakers": [
         {
           "name": "Navn",
           "bio": "Om Navn",
-          "sessionId": "9a5a84def65d4c3880e0154c0adf50e5"
+          "sessionId": "D2_1"
         }
-      ],
-      "slug": "keynote"
+      ]
     }
   ]
 }

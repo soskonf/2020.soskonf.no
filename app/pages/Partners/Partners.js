@@ -88,7 +88,7 @@ function Partners() {
                             Stand (6 m²). Velge standplass først.
                         </li>
                         <li className='list__item'>
-                            To konferansebillett som gir tilgang til hele konferansen og middagen.
+                            To billetter som gir tilgang til hele konferansen og middagen.
                         </li>
                         <li className='list__item'>
                             Fem billetter til redusert partnerpris.
@@ -104,7 +104,7 @@ function Partners() {
                             Stand (4 m²).
                         </li>
                         <li className='list__item'>
-                            To konferansebillett som gir tilgang til hele konferansen og middagen.
+                            To billetter som gir tilgang til hele konferansen og middagen.
                         </li>
                         <li className='list__item'>
                             To billetter til redusert partnerpris.

@@ -73,12 +73,15 @@ function SessionItem(props: SessionItemProps) {
                 <Col xs={12} sm={10} md={11} lg={11}>
                     <Row className="program-simple-session-title">
                         {props.session.video ? <PlayCircle className="program-video-icon" size={32} /> : null}
-                        <Link href={`/program/${props.session.sessionId}`}>{props.session.title}</Link>
+                        {props.session.sessionId ? <Link href={`/program/${props.session.sessionId}`}>{props.session.title}</Link> : props.session.title}
+
                     </Row>
                     <Row>
+{/*
                         <Col className="program-margin-right">
                             <strong>{sessionFormat(props.session.format)}</strong>
                         </Col>
+*/}
                         <Col className="program-margin-right">
                             {props.session.room}
                         </Col>
@@ -93,13 +96,14 @@ function SessionItem(props: SessionItemProps) {
                         </Col>
                     </Row>
                 </Col>
+                {props.session.sessionId ?
                 <Col sm={2} md={1} lg={1}>
                      <Row className="program-favorite-button" center="xs" middle="xs">
                         <button onClick={() => {props.addToFav(props.session)}}>
                             {isFavorite >= 0 ? <CheckCircle size={32} /> : <Circle size={32} />}
                         </button>
                     </Row>
-                </Col>
+                </Col> : null}
             </Row>
         </div>
     );
