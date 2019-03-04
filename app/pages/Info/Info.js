@@ -128,9 +128,9 @@ function BetterExplorerSection() {
                     Dagen før konferansen avholdes det et <a href="/workshops">sertifiseringskurs</a> i Certificate of Cloud Security Knowledge (CCSK) versjon 4.
                 </p>
             </LeftBlock>
-            <LeftBlock header="To hele dager">
+            <LeftBlock header="To dager konferanse">
                 <p>
-                    To hele dager med foredrag. Ikke gå glipp av alle de fantastiske <a href="/program">foredragene</a>.
+                    To dager med foredrag. Ikke gå glipp av alle de fantastiske <a href="/program">foredragene</a>.
                 </p>
             </LeftBlock>
             <LeftBlock header="Middag og underholdning">
