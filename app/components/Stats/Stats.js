@@ -35,7 +35,7 @@ function Stats(props: StatsProps) {
                             <StatItem image={location}>Britannia Hotell, Trondheim</StatItem>
                         </Col>
                         <Col xs={12} sm={6} md={3} lg={3}>
-                            <StatItem image={calendar}>7.-8. Mai</StatItem>
+                            <StatItem image={calendar}>6.-8. Mai</StatItem>
                         </Col>
                         <Col xs={12} sm={6} md={3} lg={3}>
                             <StatItem image={mic}>~20 Foredragsholdere</StatItem>

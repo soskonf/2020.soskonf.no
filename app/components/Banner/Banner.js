@@ -12,7 +12,7 @@ function Banner() {
             </div>
 
             <div className="logo-text">
-                <h2>Britannia Hotell 7.-8. Mai. 2019, Trondheim</h2>
+                <h2>Britannia Hotell 6.-8. Mai. 2019, Trondheim</h2>
             </div>
         </div>
     );

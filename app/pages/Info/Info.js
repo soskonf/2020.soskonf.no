@@ -223,7 +223,7 @@ function QuestionSection() {
 function Info() {
     return (
         <Page name='info'>
-            <PageHeader subHeader="7.-8. Mai" subSubHeader="Britannia Hotell, Trondheim">
+            <PageHeader subHeader="6.-8. Mai" subSubHeader="Britannia Hotell, Trondheim">
                 <ImageBlock image={SOSLogo} alt="Sikkerhet og Sårbarhet 2019"/>
             </PageHeader>
             <AboutSection/>
