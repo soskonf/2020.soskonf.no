@@ -3,6 +3,7 @@ import partners from './pages/Partners/Partners.js';
 import notFound from './pages/NotFound/NotFound.js';
 import speakers from './pages/Speakers/Speakers.js';
 import speakerinfo from './pages/speakerinfo';
+import workshops from './pages/Workshops/Workshops.js';
 import monetaryPolicy from './pages/monetary-policy';
 import tipsAndTricks from './pages/tips-and-tricks';
 import tickets from './pages/Tickets/Tickets.js';
@@ -18,6 +19,7 @@ const routes = compile({
     '/speakers/monetary-policy': monetaryPolicy,
     '/speakers/tips': tipsAndTricks,
     '/speakers/info': speakerinfo,
+    '/workshops': workshops,
     '/tickets': tickets,
     '/info': info,
     '/conduct': Conduct,

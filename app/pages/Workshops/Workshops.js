@@ -1,16 +1,16 @@
 //@flow
-import { connect } from 'react-redux';
-import { Link } from '../../components/link';
-import { getWorkshops } from '../../actions/workshops';
-import { getSessions } from '../../actions/sessions';
+import {connect} from 'react-redux';
+import {Link} from '../../components/link';
+import {getWorkshops} from '../../actions/workshops';
+import {getSessions} from '../../actions/sessions';
 import * as React from 'react';
 import Loader from '../../components/Loader/Loader.js';
 import Page from '../../components/Page/Page.js';
 import PageHeader from '../../components/PageHeader/PageHeader.js';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import { Section } from '../../components/Section/Section.js';
+import {Grid, Row, Col} from 'react-flexbox-grid';
+import {Section} from '../../components/Section/Section.js';
 import Button from '../../components/Button/Button.js';
-import { CenterBlock } from '../../components/Block/Block.js';
+import {RightBlock} from '../../components/Block/Block.js';
 import './Workshops.less';
 
 function workshopClass(workshop) {
@@ -19,17 +19,17 @@ function workshopClass(workshop) {
     }
 
     switch (workshop.status) {
-        case 'FREE_SPOTS': 
+        case 'FREE_SPOTS':
             return 'button--green';
-        case 'FEW_SPOTS': 
+        case 'FEW_SPOTS':
             return 'button--yellow';
-        case 'FULL': 
+        case 'FULL':
             return 'button--red';
-        case 'VERY_FULL': 
+        case 'VERY_FULL':
             return 'button--red';
-        case 'CLOSED': 
+        case 'CLOSED':
             return 'button--disabled';
-        default: 
+        default:
             return 'button--disabled';
     }
 }
@@ -42,15 +42,15 @@ function workshopStatus(workshop) {
     switch (workshop.status) {
         case 'FREE_SPOTS':
             return 'Registration open';
-        case 'FEW_SPOTS': 
+        case 'FEW_SPOTS':
             return 'Few spots left';
-        case 'FULL': 
+        case 'FULL':
             return 'Waiting list';
-        case 'VERY_FULL': 
+        case 'VERY_FULL':
             return 'No more spots';
-        case 'CLOSED': 
+        case 'CLOSED':
             return 'Registration closed';
-        default: 
+        default:
             return 'Opens at August 6th, 13:00';
     }
 }
@@ -58,7 +58,7 @@ function workshopStatus(workshop) {
 
 function generateSpeakersString(speakers: []): string {
     let speakersCombined = '';
-    speakers.forEach((speaker, idx) => (idx < speakers.length-1) ? speakersCombined += `${speaker.name}, ` : speakersCombined += speaker.name);
+    speakers.forEach((speaker, idx) => (idx < speakers.length - 1) ? speakersCombined += `${speaker.name}, ` : speakersCombined += speaker.name);
     return speakersCombined;
 }
 
@@ -89,8 +89,8 @@ function SimpleSessionList(props: SimpleSessionListProps) {
                     </Col>
                     <Col sm={2} md={1} lg={1}>
                         {workshop.status === 'CLOSED'
-                        ? null
-                        :   
+                            ? null
+                            :
                             <Row className="workshop-register-button" center="xs" middle="xs">
                                 <Col>
                                     <Button alternate link={workshop.registerLoc}>Register</Button>
@@ -98,7 +98,7 @@ function SimpleSessionList(props: SimpleSessionListProps) {
                             </Row>}
                     </Col>
                 </Row>
-            </div>
+            </div>;
         })
     );
 };
@@ -112,8 +112,7 @@ type WorkshopsProps = {
     failure: boolean;
 }
 
-type WorkshopsState = {
-}
+type WorkshopsState = {}
 
 class Workshops extends React.Component<WorkshopsProps, WorkshopsState> {
 
@@ -128,22 +127,72 @@ class Workshops extends React.Component<WorkshopsProps, WorkshopsState> {
 
     render() {
         const filteredWorkshops = this.props.sessions.filter(session => session.format === 'workshop');
-        const content = this.props.failure 
-            ? <Section class="program-loader" dark><Loader /></Section>
-            : <SimpleSessionList workshops={filteredWorkshops} />;
+        const content = this.props.failure
+            ? <Section class="program-loader" dark><Loader/></Section>
+            : <SimpleSessionList workshops={filteredWorkshops}/>;
         console.log('workshops', filteredWorkshops);
         return (
             <Page name='workshops'>
-                <PageHeader subHeader="Bring out the most of your ticket">Workshops</PageHeader>
+                <PageHeader
+                    subHeader="Lær hvordan du utvikler et helhetlig sikkerhetsprogram for å ta i bruk skytjenester">Certificate
+                    of Cloud Security Knowledge (CCSK) versjon 4 </PageHeader>
                 <Section>
-                    <CenterBlock>
-                        <p>
-                            For those of you who want to make the most of their JavaZone ticket we offer a selection of hands-on workshops that take place the day before JavaZone officially begins. To ensure a positive learning experience we’ve limited the spaces on each workshop, so you’ll have to register to secure your place. Registration opens on Monday, August 6 at 13:00, so put a reminder in your calendar!
-                        </p>
-                    </CenterBlock>
+                    <RightBlock>
+                        <p>Kurset består av både en omfattende eLærings-del man får tilgang til etter påmelding, samt
+                            innlogging til diskusjonsfora og studiegrupper i etterkant for å sikre sertifiseringen.</p>
+                        <ul>
+                            <li>Bygg opp din kompetanse for å bidra i bedriftens strategiske bruk av skytjenester</li>
+                            <li>Har du kompetansen fra praktisk erfaring; bekreft din kompetanse oppnådd gjennom
+                                erfaring i skyssikkerhet!
+                            </li>
+                            <li>Dokumentèr dine tekniske kunnskaper, ferdigheter og evne til å effektivt utvikle et
+                                helhetlig sikkerhetsprogram for skytjenester i forhold til globalt aksepterte standarder
+                            </li>
+                            <li>Skill deg fra andre kandidater for ansettelse i det raskt voksende
+                                sky-sikkerhetsmarkedet
+                            </li>
+                            <li>Få tilgang til verdifulle karriere-ressurser, inkludert verktøy, nettverk og
+                                idèutveksling med kolleger
+                            </li>
+                        </ul>
+                    </RightBlock>
                 </Section>
                 <Section dark>
-                    {content}
+                    <h3>Hvem er målgruppen?</h3>
+
+                    <p>
+                        Dette Cloud Security-kurset er rettet mot sikkerhetsfagfolk, IT-arkitekter, IT-ledere, de som er
+                        ansvarlige for teknisk risiko, styring og sikring, de som leverer skyløsninger og de som ønsker
+                        å øke sin kunnskap om sikkerhet tilknyttet skytjenester.
+                    </p>
+                    <p>
+                        Det forventes at deltakerne har grunnleggende kunnskaper om sikkerhetsmekanismer som brannmurer,
+                        kryptering, sikker utvikling og identitetsadministrasjon.
+                    </p>
+
+
+                    <h3>Hva inngår i kursavgiften?</h3>
+
+                    <div>
+                        <p>
+                            Kursavgiften inkluderer tre komponenter:
+                        </p>
+
+                        <ul>
+                            <li>
+                                Èn full dag med interaktiv opplæring av CCSK versjon 4 kunnskapsdatabasen. Lunsj og
+                                forfriskninger inkludert.
+                            </li>
+                            <li>
+                                E-læringsmiljø med sertifiseringens materiale; du vil få tilgang til dette i forkant av
+                                kurset og det anbefales at man å begynne å forberede seg FØR selve kurset. Du vil ha
+                                tilgang til materiellet i ytterligere tre måneder etter kurset.
+                            </li>
+                            <li>
+                                Eksamenstoken som gir deg rett til to forsøk på CCSK online eksamen
+                            </li>
+                        </ul>
+                    </div>
                 </Section>
             </Page>
         );
@@ -159,4 +208,4 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps, { getWorkshops, getSessions })(Workshops);
+export default connect(mapStateToProps, {getWorkshops, getSessions})(Workshops);
