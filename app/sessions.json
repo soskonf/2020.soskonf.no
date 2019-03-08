@@ -8,10 +8,10 @@
       "sessionId": "",
       "abstract": "",
       "title": "Registrering og morgenbuffet",
-      "room": "Kongressalen",
+      "room": "Britannia Hall",
       "speakers": [
         {
-          "name": "",
+          "name": "Sekretariatet",
           "bio": "",
           "sessionId": ""
         }
@@ -46,7 +46,7 @@
       "speakers": [
         {
           "name": "Per Thorsheim",
-          "bio": "Sikkerhetsjef og passordeksepert, Nordic Choice Hotels",
+          "bio": "Sikkerhetsjef og passordekspert, Nordic Choice Hotels",
           "sessionId": "D1_A2"
         }
       ]
@@ -115,7 +115,7 @@
       "sessionId": "D1_B1",
       "abstract": "OWASP Application Security Verification Standard (ASVS) er et rammeverk for sikkerhetskrav og verifikasjon av disse. Sammenlignet med OWASP Top 10, gir ASVS en proaktiv tilnærming til applikasjonssikkerhet, med ulike krav basert på en valgt risikoprofil. Foredraget viser både hvordan ASVS er egnet som pedagogisk mal for sikkerhetskrav til både for kode man utvikler selv, og for applikasjoner som man kjøper fra andre.",
       "title": "Sikkerhetskrav med OWASP ASVS",
-      "room": "Andre salen",
+      "room": "Kinoen",
       "speakers": [
         {
           "name": "Erlend Andreas Gjære",
@@ -149,7 +149,7 @@
       "sessionId": "D1_B2",
       "abstract": "",
       "title": "Hacking av 5G nettet",
-      "room": "Andre salen",
+      "room": "Kinoen",
       "speakers": [
         {
           "name": "Ravishankar Borgaonk",
@@ -183,7 +183,7 @@
       "sessionId": "D1_B3",
       "abstract": "Cryptojacking er i ferd med å ta over tronen som den største formen for digital vinningskriminalitet. Denne typen angrep låner prosessorkraft og minne fra datamaskiner, mobiltelefoner og IoT-dingser for å grave etter kryptovaluta uten at eierne merker noen ting. Smittefaren er også stor, ettersom skadevaren kan hoppe rett inn i nettleseren når man besøker mange av de mest populære nettsidene i verden.",
       "title": "You Don’t Know CryptoJack",
-      "room": "Andre salen",
+      "room": "Kinoen",
       "speakers": [
         {
           "name": "Per Håkon Meland",
@@ -222,7 +222,7 @@
       "sessionId": "D1_B4",
       "abstract": "",
       "title": "Hvorfor lager folk så dårlige passord? -og hva kan vi gjøre med det?",
-      "room": "Andre salen",
+      "room": "Kinoen",
       "speakers": [
         {
           "name": "Cecilie Wian",

@@ -72,11 +72,13 @@ function SessionItem(props: SessionItemProps) {
             <Row>
                 <Col xs={12} sm={10} md={11} lg={11}>
                     <Row className="program-simple-session-title">
-                        {props.session.video ? <PlayCircle className="program-video-icon" size={32} /> : null}
                         {props.session.sessionId ? <Link href={`/program/${props.session.sessionId}`}>{props.session.title}</Link> : props.session.title}
 
                     </Row>
                     <Row>
+                        <Col className="program-margin-right-speaker">
+                            {props.session.speakers.length > 1 ? generateSpeakersString(props.session.speakers) : props.session.speakers[0].name}
+                        </Col>
 {/*
                         <Col className="program-margin-right">
                             <strong>{sessionFormat(props.session.format)}</strong>
@@ -85,14 +87,13 @@ function SessionItem(props: SessionItemProps) {
                         <Col className="program-margin-right">
                             {props.session.room}
                         </Col>
+{/*
                         <Col className="program-margin-right">
                             {props.session.language === 'en' ? 'Engelsk' : 'Norsk'}
                         </Col>
-                        <Col className="program-margin-right">
-                            {`${props.session.length} Minutter`}
-                        </Col>
+*/}
                         <Col>
-                            {props.session.speakers.length > 1 ? generateSpeakersString(props.session.speakers) : props.session.speakers[0].name}
+                            {`${props.session.length} Minutter`}
                         </Col>
                     </Row>
                 </Col>
