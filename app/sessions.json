@@ -164,13 +164,13 @@
       "length": "30",
       "language": "no",
       "sessionId": "D1_A7",
-      "abstract": "",
-      "title": "Foredrag kommer",
+      "abstract": "Når det kommer til skytjenester kan du som kunde outsource driften, men ikke eierskapet til risiko. Derfor oppfordres det til tett samarbeid med din skyleverandør. Hvilke sikkerhetstiltak finnes og hva bør du gjøre for å beskytte deg? Camilla Gustafsson tar for seg dagens- og fremtidens trusselbilde, for hvilken risiko er dere egentlig villig til å ta?",
+      "title": "Sikkerhet i skyen - hvilken risiko er dere villig til å ta?",
       "room": "Kongressalen",
       "speakers": [
         {
-          "name": "",
-          "bio": "",
+          "name": "Camilla Gustafsson",
+          "bio": "Løsningsarkitekt, Basefarm",
           "sessionId": "D1_A7"
         }
       ]
