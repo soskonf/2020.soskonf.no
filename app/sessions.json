@@ -147,8 +147,8 @@
       "length": "30",
       "language": "en",
       "sessionId": "D1_B2",
-      "abstract": "",
-      "title": "Hacking av 5G nettet",
+      "abstract": "The 5G networks are about to launch commercially in 2020 with lots of promises to the end-users and industries as well. In this talk, we discuss 5G security architecture in brief and reveal practical privacy risks to the end-users. These privacy vulnerabilities are reported and acknowledged by the telecom standardisation body. After a brief demo of privacy attacks and impact, we conclude with potential remedial actions from the customer and industry perspective.",
+      "title": "Privacy risks in 5G networks",
       "room": "Kinoen",
       "speakers": [
         {
