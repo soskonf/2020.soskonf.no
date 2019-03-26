@@ -183,22 +183,27 @@ class Workshops extends React.Component<WorkshopsProps, WorkshopsState> {
                     Eksamen er online og kan når det passer etter kursets gjennomføring (eksamenstoken verdt 2400 kroner er inkludert i kursavgiften og gir rett til to forsøk på å ta sertifiseringen).
                     </p>
 
-                    <h3>Hvem er målgruppen?</h3>
-
-                    <p>
-                        Dette Cloud Security-kurset er rettet mot sikkerhetsfagfolk, IT-arkitekter, IT-ledere, de som er
-                        ansvarlige for teknisk risiko, styring og sikring, de som leverer skyløsninger og de som ønsker
-                        å øke sin kunnskap om sikkerhet tilknyttet skytjenester.
-                    </p>
-                    <p>
-                        Det forventes at deltakerne har grunnleggende kunnskaper om sikkerhetsmekanismer som brannmurer,
-                        kryptering, sikker utvikling og identitetsadministrasjon.
-                    </p>
-
-
-                    <h3>Hva inngår i kursavgiften?</h3>
 
                     <div>
+                        <h3>Hvem er målgruppen?</h3>
+                        <p>
+                            Dette Cloud Security-kurset er rettet mot sikkerhetsfagfolk, IT-arkitekter, IT-ledere, de som er
+                            ansvarlige for teknisk risiko, styring og sikring, de som leverer skyløsninger og de som ønsker
+                            å øke sin kunnskap om sikkerhet tilknyttet skytjenester.
+                        </p>
+                        <p>
+                            Det forventes at deltakerne har grunnleggende kunnskaper om sikkerhetsmekanismer som brannmurer,
+                            kryptering, sikker utvikling og identitetsadministrasjon.
+                        </p>
+
+                        <p>
+                            Hele kurset foregår foregår på engelsk.
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <h3>Hva inngår i kursavgiften?</h3>
                         <p>
                             Kursavgiften inkluderer tre komponenter:
                         </p>
