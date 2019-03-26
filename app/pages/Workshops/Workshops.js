@@ -12,6 +12,8 @@ import {Section} from '../../components/Section/Section.js';
 import Button from '../../components/Button/Button.js';
 import {RightBlock} from '../../components/Block/Block.js';
 import './Workshops.less';
+import {P} from "../../components/block";
+import {CenterBlock} from "../../components/Block/Block";
 
 function workshopClass(workshop) {
     if (!workshop) {
@@ -158,6 +160,29 @@ class Workshops extends React.Component<WorkshopsProps, WorkshopsState> {
                     </RightBlock>
                 </Section>
                 <Section dark>
+                    <p>
+                    Cloud Security Alliance innehar den opprinnelige, leverandøruavhengige kunnskapsbasen innen skyssikkerhet utviklet av bransjen selv koordinert av Cloud Security Alliance. Sertifikatet for Cloud Security Knowledge (CCSK) er en individuell sertifisering.
+                    </p>
+                    <p>
+                        <q>The mother of all cloud computing security certifications</q> i følge CIO Magazine.
+                    </p>
+
+                    <p>
+                    Sertifiseringen dokumenterer at du har ferdigheter og kunnskaper for å sikre at skyttjenester implementeres og benyttes i organisasjonen din med nødvendige sikkerhetskontroller på plass. Dette inkluderer teknisk rammeverk såvel som rammeverk for ledelse og overordnet styring (governance).
+                    </p>
+
+                    <p>
+                    Innholdet i  CCSK ble nylig oppdatert til versjon 4, og inneholder nå de nyeste og mest relevante fagområdene, inkludert DevOps, big data og IoT.
+                    </p>
+
+                    <p>
+                    Denne endags workshopen vil forberede deg til CCSK eksamen. For å sikre maksimalt utbytte av opplæringen anbefaler vi at du registrerer deg tidlig og begynner å forberede på forhånd med det elektroniske opplæringsmateriellet du vil få tilgang til.
+                    </p>
+
+                    <p>
+                    Eksamen er online og kan når det passer etter kursets gjennomføring (eksamenstoken verdt 2400 kroner er inkludert i kursavgiften og gir rett til to forsøk på å ta sertifiseringen).
+                    </p>
+
                     <h3>Hvem er målgruppen?</h3>
 
                     <p>
@@ -193,7 +218,14 @@ class Workshops extends React.Component<WorkshopsProps, WorkshopsState> {
                             </li>
                         </ul>
                     </div>
+                    <CenterBlock>
+                        <P>
+                            <a className='button button--transparent'
+                               href="https://www.cloudsecurityalliance.no/ccskv4-mer-informasjon">Finn ut mer om kurset</a>
+                        </P>
+                    </CenterBlock>
                 </Section>
+
             </Page>
         );
     }
