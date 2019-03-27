@@ -131,12 +131,12 @@
       "language": "no",
       "sessionId": "D1_A6",
       "abstract": "",
-      "title": "Foredrag kommer",
+      "title": "Alternativer til digital grensemur",
       "room": "Kongressalen",
       "speakers": [
         {
-          "name": "",
-          "bio": "",
+          "name": "Are Hellandsvik",
+          "bio": "Forsker, Sintef Digital",
           "sessionId": "D1_A6"
         }
       ]
@@ -250,8 +250,8 @@
     },
     {
       "startTime": "2019-05-07T16:45",
-      "endTime": "2019-05-07T17:45",
-      "length": "60",
+      "endTime": "2019-05-07T17:30",
+      "length": "45",
       "language": "no",
       "sessionId": "D1_A10",
       "abstract": "",
