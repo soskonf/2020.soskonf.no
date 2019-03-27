@@ -337,15 +337,15 @@
       "startTime": "2019-05-08T13:00",
       "endTime": "2019-05-08T13:45",
       "length": "45",
-      "language": "no",
+      "language": "en",
       "sessionId": "D2_5",
       "abstract": "",
-      "title": "Foredrag kommer",
+      "title": "Saving lives through security research",
       "room": "Kongressalen",
       "speakers": [
         {
-          "name": "",
-          "bio": "",
+          "name": "Beau Woods",
+          "bio": "Cyber Safety Advocate, I Am the Cavalry",
           "sessionId": "D2_5"
         }
       ]
