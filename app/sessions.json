@@ -323,12 +323,12 @@
       "language": "no",
       "sessionId": "D2_4",
       "abstract": "",
-      "title": "Tittel kommer",
+      "title": "Foredrag kommer",
       "room": "Kongressalen",
       "speakers": [
         {
-          "name": "Hans Petter Holen",
-          "bio": "Informasjonssikkerhetsansvarlig, Visma",
+          "name": "",
+          "bio": "",
           "sessionId": "D2_4"
         }
       ]
