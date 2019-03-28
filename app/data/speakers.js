@@ -6,7 +6,7 @@
 export default [
     {
         name: 'Are Hellandsvik',
-        title: 'Forsker, Sintef Digital',
+        title: 'Forsker, SINTEF Digital',
         image: 'are_hellandsvik.jpg',
         url: '',
         bio: 'Siv.ing i Analog Mikroelektronikk fra NTNU med erfaring til sammen 10 års erfaring fra Atmel og Data Response. Har de siste 6 årene jobbet som forsker ved SINTEF Digital.'
