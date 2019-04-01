@@ -4,6 +4,8 @@ const commonConfig = require('./webpack.common.js');
 
 module.exports = webpackMerge(commonConfig, {
     plugins: [
-        new webpack.optimize.UglifyJsPlugin()
+        new webpack.optimize.UglifyJsPlugin({
+            sourceMap: true,
+        }),
     ]
 });
