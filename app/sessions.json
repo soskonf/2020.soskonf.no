@@ -264,14 +264,15 @@
       "length": "45",
       "language": "no",
       "sessionId": "D1_A10",
-      "abstract": "",
-      "title": "Foredrag kommer",
+      "abstract": "Bli med på en reise sammen med Oddvar Moe og se hvordan hackere utfører sine avanserte angrep.\n\nI foredraget blir det gått igjennom hvordan avanserte angripere tar seg frem for å komme seg forbi vanlige beskyttelser som bedrifter etablerer. Du vil se hva som kjennetegner et avansert angrep og forstå hvordan angripere ser på infrastrukturen din og dine digital fotspor. Det vil bli gitt råd om hvordan du kan beskytte din bedrift bedre og det blir gått igjennom konkrete teknikker som benyttes i virkelige angrep.",
+      "title": "Hacking av bedrifter i dag",
       "room": "Kongressalen",
       "speakers": [
         {
-          "name": "",
-          "bio": "",
-          "sessionId": "D1_A10"
+          "name": "Oddvar Moe",
+          "bio": "Senior Sikkerhetskonsulent, TrustSec",
+          "sessionId": "D1_A10",
+          "image": "oddvar_moe.jpg"
         }
       ]
     },
