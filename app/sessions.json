@@ -36,7 +36,7 @@
     },
     {
       "startTime": "2019-05-07T10:15",
-      "endTime": "2019-05-07T11:45",
+      "endTime": "2019-05-07T11:00",
       "length": "45",
       "language": "no",
       "sessionId": "D1_A2",
@@ -250,8 +250,8 @@
     },
     {
       "startTime": "2019-05-07T16:45",
-      "endTime": "2019-05-07T17:45",
-      "length": "60",
+      "endTime": "2019-05-07T17:30",
+      "length": "45",
       "language": "no",
       "sessionId": "D1_A10",
       "abstract": "",
@@ -339,7 +339,7 @@
       "length": "45",
       "language": "en",
       "sessionId": "D2_5",
-      "abstract": "",
+      "abstract": "Our dependence on connected technology has grown faster than our ability to safeguard ourselves - cybersecurity failures impact human life and public safety. I Am The Cavalry is a global grassroots initiative from the security research community collaborating with others to avoid harm, where “bits-and-bytes meet flesh-and-blood”. Over the past five years, we have helped shape international laws and practices toward better outcomes, as well as to introduce security researchers into significant industry and government conversations. This talk will introduce I Am The Cavalry, demonstrate achievements and methods, and show the audience what they can do to help make the world safer, sooner, together.",
       "title": "Saving lives through security research",
       "room": "Kongressalen",
       "speakers": [
