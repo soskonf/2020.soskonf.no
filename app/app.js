@@ -12,6 +12,6 @@ import { store } from './store.js';
 import routes from './routes';
 import Root from './root';
 
-const container = document.querySelector('#app');
+const container = document.getElementById('app');
 
 render(<Provider store={store}><Root></Root></Provider>, container);
