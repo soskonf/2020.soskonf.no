@@ -1,7 +1,7 @@
 //@flow
 import * as React from 'react';
 import './Banner.less';
-import SOSLogo from '../../assets/2019/sos-logo-1860x142_invert.png';
+import SOSLogo from '../../assets/logo/sos-logo-flat-invert-1860x142.png';
 
 function Banner() {
     return (

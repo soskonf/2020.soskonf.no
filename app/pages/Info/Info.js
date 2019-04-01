@@ -9,7 +9,7 @@ import speakers from '../../data/speakers';
 import {Col, Grid, Row} from 'react-flexbox-grid';
 import {Link} from "../../components/link";
 import britannia from "../../assets/britannia-fasade2.jpg";
-import SOSLogo from "../../assets/2019/sos-logo-1860x142_invert_white.png";
+import SOSLogo from "../../assets/logo/sos-logo-flat-invert-white-1860x142.png";
 
 function shuffle(o) {
     for (let j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x) ;
