@@ -4,9 +4,6 @@ import Page from '../../components/Page/Page';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import { Section } from '../../components/Section/Section';
 import { LeftBlock, CenterBlock, ImageBlock } from '../../components/Block/Block';
-import info1 from '../../assets/info_1.jpg';
-import tickets2 from '../../assets/tickets_2.jpg';
-import partners1 from '../../assets/partners_1.jpg';
 
 function ConductSection() {
     return (
