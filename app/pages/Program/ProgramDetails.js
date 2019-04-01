@@ -9,6 +9,7 @@ import PageHeader from '../../components/PageHeader/PageHeader.js';
 import {LeftBlock} from '../../components/Block/Block.js';
 import {PageHeading} from '../../components/page';
 import {compose, constant, find, get} from 'lodash/fp';
+import {CenterBlock} from "../../components/Block/Block";
 
 type ProgramDetailsProps = {
     sessions: [];
@@ -95,7 +96,12 @@ class ProgramDetails extends React.Component<ProgramDetailsProps, ProgramDetails
                                         <p className="text-wrap">
                                             {speaker.bio}
                                         </p>
-                                    </LeftBlock>
+                                {speaker.image ?
+                                    <div className="block-image-wrapper">
+                                        <div key={speaker.name} className="block-image">
+                                            <img src={require('../../assets/2019/speakers/'+speaker.image)} alt={speaker.name}/>
+                                        </div>
+                                    </div> : null}                                    </LeftBlock>
                         }) : null}
 {/*
                         <LeftBlock header="intended audience">
