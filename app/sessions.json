@@ -94,18 +94,18 @@
       "length": "30",
       "language": "no",
       "sessionId": "D1_A5",
-      "abstract": "",
-      "title": "Dok 1 - Svakheter ved informasjonssikkerhet",
+      "abstract": "De senere årene er offentlig forvaltning blitt mer oppmerksom på kravene om styring på informasjonssikkerhetsområdet og begreper som policy for informasjonssikkerhet, risikostyring og ISO 27000-serien er velkjente for mange. Men - hvor langt er arbeidet egentlig kommet? Riksrevisjonen har undersøkt flere statlige virksomheters informasjonssikkerhetsarbeid og vil summere opp hovedobservasjoner fra revisjonene.",
+      "title": "Informasjonssikkerhet – observasjoner fra revisjoner",
       "room": "Kongressalen",
       "speakers": [
         {
-          "name": "Magnhild Kassin",
-          "bio": "Riksrevisjonen",
+          "name": "Magnhild Kaasin",
+          "bio": "Seniorrådgiver, Riksrevisjonen",
           "sessionId": "D1_A5"
         },
         {
           "name": "Kristin Olsen",
-          "bio": "Riksrevisjonen",
+          "bio": "Seniorrådgiver, Riksrevisjonen",
           "sessionId": "D1_A5"
         }
       ]
