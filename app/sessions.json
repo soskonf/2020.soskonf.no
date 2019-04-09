@@ -277,6 +277,24 @@
       ]
     },
     {
+      "startTime": "2019-05-07T19:30",
+      "endTime": "2019-05-07T21:30",
+      "length": "",
+      "language": "",
+      "sessionId": "D1_A11",
+      "abstract": "",
+      "title": "Middag",
+      "room": "",
+      "speakers": [
+        {
+          "name": "Kongressalen",
+          "bio": "",
+          "sessionId": "D1_A11",
+          "image": ""
+        }
+      ]
+    },
+    {
       "startTime": "2019-05-08T09:00",
       "endTime": "2019-05-08T10:00",
       "length": "60",

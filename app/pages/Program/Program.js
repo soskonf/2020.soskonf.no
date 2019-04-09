@@ -93,7 +93,7 @@ function SessionItem(props: SessionItemProps) {
                         </Col>
 */}
                         <Col>
-                            {`${props.session.length} Minutter`}
+                            {props.session.length ? `${props.session.length} Minutter` : null}
                         </Col>
                     </Row>
                 </Col>
