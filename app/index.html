@@ -58,12 +58,17 @@
                 }
             }(window.location))
         </script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137990578-1"></script>
         <script>
             var host = window.location.hostname;
             if(host === "2019.soskonf.no")
             {
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+                var newScript = document.createElement("script");
+                newScript.type = "text/javascript";
+                newScript.setAttribute("async", "true");
+                newScript.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=UA-137990578-1");
+                document.documentElement.firstChild.appendChild(newScript);
+
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
