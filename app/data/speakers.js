@@ -1,6 +1,4 @@
 //{name: 'Bent Heier Johansen', title: 'Masterstudent, NTNU', image: 'none.jpg', url: '', bio: 'Er i ferd med å fullføre mastergraden ved NTNU som har temaet drive-by cryptojacking. '},
-//{name: 'Kristin Olsen', title: 'Riksrevisjonen', image: '', url: '' , bio: ''},
-//{name: 'Magnhild Kaasin', title: 'Riksrevisjonen', image: '', url: '', bio: ''},
 
 export default [
     {
@@ -16,6 +14,8 @@ export default [
     {name: 'Cecilie Wian', title: 'IT Konsulent, Knowit', image: 'cecilie_wian.jpg', url: '', bio: 'Med en bakgrunn i både pedagogikk og it, og et hjerte for brukerne. Jobber som konsulent hos Knowit Consulting Bergen, hovedsaklig med QA'},
     {name: 'Eirik Gulbrandsen', title: 'Forretningsutvikler i Arrow ECS Norway og leder av Cloud Security Alliance Norway', image: 'eirik_gulbrandsen.jpg', url: 'https://twitter.com/eirikgul', bio: 'Med 30 års erfaring i IT bransjen så har Eirik prøvd det meste; journalist, grunder, prosjektleder, konsulent, salg og evangelist med mere. Sitter i styret for Dataforeningen og leder for CSA Norge.'},
     {name: 'Erlend Andreas Gjære', title: 'Spesialist på sikkerhet og folk, Secure Practice', image: 'erlend_gjere.jpg', url: 'https://twitter.com/erlangsec', bio: 'Erlend har mastergrad i informatikk fra NTNU, er sertifisert ISO27001 Lead Implementer, og har tidligere erfaring fra flere år som forsker og ansvarlig for sikkerhet blant ansatte i SINTEF, og som sikkerhetsleder i Signicat. Nå er han gründer og daglig leder i Secure Practice AS, som i 2018 vant Outstanding Security Performance Award for beste nye sikkerhetsprodukt med MailRisk.'},
+    {name: 'Magnhild Kaasin', title: 'Seniorrådgiver, Riksrevisjonen', image: 'magnhild_kaasin.jpg', url: '', bio: ''},
+    {name: 'Kristin Olsen', title: 'Seniorrådgiver, Riksrevisjonen', image: 'kristin_olsen.jpg', url: '' , bio: ''},
     {name: 'Guttom Sindre', title: 'Professor, NTNU', image: 'guttorm_sindre.jpg', url: '' , bio: ''},
     {name: 'Per Thorsheim', title: 'Sikkerhetssjef og passordekspert', image: 'per_thorsheim.jpg', url: 'https://twitter.com/thorsheim' , bio: 'Lidenskapelig opptatt av folks dårlige passord, som bidro til at han grunnla http://PasswordsCon.org. Jobber til daglig som sikkerhetssjef, men er en dreven foredragsholder som vet å fange oppmerksomheten til de fleste.  Mest kjent for å i 2012 avslørte at Linkedin var blitt hacket, samt i 2015 med datingtjenesten Ashley Madison. Han er sertifisert CISA, CISM, CISSP & ISSAP.'},
     {

@@ -101,12 +101,14 @@
         {
           "name": "Magnhild Kaasin",
           "bio": "Seniorrådgiver, Riksrevisjonen",
-          "sessionId": "D1_A5"
+          "sessionId": "D1_A5",
+          "image": "magnhild_kaasin.jpg"
         },
         {
           "name": "Kristin Olsen",
           "bio": "Seniorrådgiver, Riksrevisjonen",
-          "sessionId": "D1_A5"
+          "sessionId": "D1_A5",
+          "image": "kristin_olsen.jpg"
         }
       ]
     },
@@ -177,7 +179,8 @@
         {
           "name": "Camilla Gustafsson",
           "bio": "Løsningsarkitekt, Basefarm",
-          "sessionId": "D1_A7"
+          "sessionId": "D1_A7",
+          "image": "camilla_gustafsson.jpg"
         }
       ]
     },
