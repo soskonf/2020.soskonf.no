@@ -120,7 +120,7 @@
       "sessionId": "D1_B1",
       "abstract": "OWASP Application Security Verification Standard (ASVS) er et rammeverk for sikkerhetskrav og verifikasjon av disse. Sammenlignet med OWASP Top 10, gir ASVS en proaktiv tilnærming til applikasjonssikkerhet, med ulike krav basert på en valgt risikoprofil. Foredraget viser både hvordan ASVS er egnet som pedagogisk mal for sikkerhetskrav til både for kode man utvikler selv, og for applikasjoner som man kjøper fra andre.",
       "title": "Sikkerhetskrav med OWASP ASVS",
-      "room": "Kinoen",
+      "room": "Tyra 2. etg",
       "speakers": [
         {
           "name": "Erlend Andreas Gjære",
@@ -156,7 +156,7 @@
       "sessionId": "D1_B2",
       "abstract": "The 5G networks are about to launch commercially in 2020 with lots of promises to the end-users and industries as well. In this talk, we discuss 5G security architecture in brief and reveal practical privacy risks to the end-users. These privacy vulnerabilities are reported and acknowledged by the telecom standardisation body. After a brief demo of privacy attacks and impact, we conclude with potential remedial actions from the customer and industry perspective.",
       "title": "Privacy risks in 5G networks",
-      "room": "Kinoen",
+      "room": "Tyra 2. etg",
       "speakers": [
         {
           "name": "Ravishankar Borgaonk",
@@ -192,7 +192,7 @@
       "sessionId": "D1_B3",
       "abstract": "Cryptojacking er i ferd med å ta over tronen som den største formen for digital vinningskriminalitet. Denne typen angrep låner prosessorkraft og minne fra datamaskiner, mobiltelefoner og IoT-dingser for å grave etter kryptovaluta uten at eierne merker noen ting. Smittefaren er også stor, ettersom skadevaren kan hoppe rett inn i nettleseren når man besøker mange av de mest populære nettsidene i verden.",
       "title": "You Don’t Know CryptoJack",
-      "room": "Kinoen",
+      "room": "Tyra 2. etg",
       "speakers": [
         {
           "name": "Guttorm Sindre",
@@ -233,7 +233,7 @@
       "sessionId": "D1_B4",
       "abstract": "Brukere lager dårlige passord - det vet vi. Brukere er mennesker. Så det neste spørsmålet er: Hva er mennesker *flinke* til? Og hvordan kan vi bruke kunnskapen om det for å lage mer brukervennlig sikkerhet? Cecilie Wian snakker om hva som foregår i hodet på brukere - om hjernen, og hvordan å få til bedre sikkerhet ved å spille på lag med mennesket.",
       "title": "Hvorfor lager folk så dårlige passord? -og hva kan vi gjøre med det?",
-      "room": "Kinoen",
+      "room": "Tyra 2. etg",
       "speakers": [
         {
           "name": "Cecilie Wian",
