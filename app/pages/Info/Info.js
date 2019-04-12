@@ -204,7 +204,7 @@ function QuestionSection() {
             <LeftBlock header="Lokasjon">
                 <ImageBlock image={britannia} alt="Britannia Kongress"/>
                 <p>
-                    Britannia hotell gjenåpnes 1. April 2019 etter en større rehabilitering, akkurat i tide for konferansen.
+                    Britannia hotell gjenåpnet 1. April 2019 etter en større rehabilitering, akkurat i tide for konferansen.
                     Det er allerede høyt påtrykk for booking av rom, så hvis du ønsker å bo her under konferansen så er
                     det viktig å reservere tidlig.
                 </p>
