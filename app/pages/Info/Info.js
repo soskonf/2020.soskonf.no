@@ -209,8 +209,7 @@ function QuestionSection() {
                     det viktig å reservere tidlig.
                 </p>
                 <p>
-                    Kontakt <a href='mailto:contact@britannia.no'>contact@britannia.no</a> eller ring 73 800 800 og oppgi <span style={{color: 'red'}}>Data060519</span> for hotellrom til spesialpris, tilbudet gjelder til 6. april.
-                </p>
+                    Kontakt <a href='mailto:contact@britannia.no'>contact@britannia.no</a> eller ring 73 800 800 for booking.                </p>
             </LeftBlock>
             <LeftBlock header="Spørsmål?">
                 <p>
