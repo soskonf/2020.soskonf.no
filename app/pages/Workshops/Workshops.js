@@ -140,6 +140,7 @@ class Workshops extends React.Component<WorkshopsProps, WorkshopsState> {
                     of Cloud Security Knowledge (CCSK) versjon 4 </PageHeader>
                 <Section>
                     <RightBlock>
+                        <p>Kurset avholdes på Britannia Hotell, Mandag 6. mai. Dagen før konferansen.</p>
                         <p>Kurset består av både en omfattende eLærings-del man får tilgang til etter påmelding, samt
                             innlogging til diskusjonsfora og studiegrupper i etterkant for å sikre sertifiseringen.</p>
                         <ul>
