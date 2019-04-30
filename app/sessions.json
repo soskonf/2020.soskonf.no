@@ -172,15 +172,15 @@
       "length": "30",
       "language": "no",
       "sessionId": "D1_A7",
-      "abstract": "Når det kommer til skytjenester kan du som kunde outsource driften, men ikke eierskapet til risiko. Derfor oppfordres det til tett samarbeid med din skyleverandør. Hvilke sikkerhetstiltak finnes og hva bør du gjøre for å beskytte deg? Camilla Gustafsson tar for seg dagens- og fremtidens trusselbilde, for hvilken risiko er dere egentlig villig til å ta?",
-      "title": "Sikkerhet i skyen - hvilken risiko er dere villig til å ta?",
+      "abstract": "DnB flytter hele mobilbankplattformen til skya, Norge har fått en strategi for digital transformasjon som omfavner bruken av skytjenester og sikkerhetsløsninger kan i stadig større grad anskaffes «som-en-tjeneste». Men om skya KAN gi deg langt bedre IT-sikkerhet, økes samtidig fokus på bestillerkompetansen. Lær mer om hva som skal til for å skaffe seg dette, på hvilken måte toneangivende organisasjoner \"tør\" å flytte forretningskritiske applikasjoner til skya og hvordan akkurat DIN bedrift kan skaffe seg tilsvarende forretningsfortrinn – gjennom sikker bruk av skytjenester!",
+      "title": "Sikkerhet er det beste argumentet for å ta i bruk skybaserte tjenester (ikke omvendt)",
       "room": "Britannia Hall",
       "speakers": [
         {
-          "name": "Camilla Gustafsson",
-          "bio": "Løsningsarkitekt, Basefarm",
+          "name": "Eirik Gulbrandsen",
+          "bio": "Forretningsutvikler i Arrow ECS Norway og leder av Cloud Security Alliance Norway",
           "sessionId": "D1_A7",
-          "image": "camilla_gustafsson.jpg"
+          "image": "eirik_gulbrandsen.jpg",
         }
       ]
     },
@@ -213,15 +213,15 @@
       "length": "30",
       "language": "no",
       "sessionId": "D1_A8",
-      "abstract": "DnB flytter hele mobilbankplattformen til skya, Norge har fått en strategi for digital transformasjon som omfavner bruken av skytjenester og sikkerhetsløsninger kan i stadig større grad anskaffes «som-en-tjeneste». Men om skya KAN gi deg langt bedre IT-sikkerhet, økes samtidig fokus på bestillerkompetansen. Lær mer om hva som skal til for å skaffe seg dette, på hvilken måte toneangivende organisasjoner \"tør\" å flytte forretningskritiske applikasjoner til skya og hvordan akkurat DIN bedrift kan skaffe seg tilsvarende forretningsfortrinn – gjennom sikker bruk av skytjenester!",
-      "title": "Sikkerhet er det beste argumentet for å ta i bruk skybaserte tjenester (ikke omvendt)",
+      "abstract": "Når det kommer til skytjenester kan du som kunde outsource driften, men ikke eierskapet til risiko. Derfor oppfordres det til tett samarbeid med din skyleverandør. Hvilke sikkerhetstiltak finnes og hva bør du gjøre for å beskytte deg? Camilla Gustafsson tar for seg dagens- og fremtidens trusselbilde, for hvilken risiko er dere egentlig villig til å ta?",
+      "title": "Sikkerhet i skyen - hvilken risiko er dere villig til å ta?",
       "room": "Britannia Hall",
       "speakers": [
         {
-          "name": "Eirik Gulbrandsen",
-          "bio": "Forretningsutvikler i Arrow ECS Norway og leder av Cloud Security Alliance Norway",
+          "name": "Camilla Gustafsson",
+          "bio": "Løsningsarkitekt, Basefarm",
           "sessionId": "D1_A8",
-          "image": "eirik_gulbrandsen.jpg"
+          "image": "camilla_gustafsson.jpg"
         }
       ]
     },
