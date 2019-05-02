@@ -1,4 +1,3 @@
-//{name: 'Bent Heier Johansen', title: 'Masterstudent, NTNU', image: 'none.jpg', url: '', bio: 'Er i ferd med å fullføre mastergraden ved NTNU som har temaet drive-by cryptojacking. '},
 
 export default [
     {
@@ -9,6 +8,7 @@ export default [
         bio: 'Siv.ing i Analog Mikroelektronikk fra NTNU med erfaring til sammen 10 års erfaring fra Atmel og Data Response. Har de siste 6 årene jobbet som forsker ved SINTEF Digital.'
     },
     {name: 'Beau Woods', title: 'Cyber Safety Advocate, I Am the Cavalry', image: 'beau_woods.jpg', url: 'https://twitter.com/beauwoods', bio: 'Sikkerhetsforsker, Cyber Safety Innovation Fellow i tenkesmien Atlantic Council, og grunder av Stratigos Security. Medgründer av I Am the Cavalry, en non-profit utdanningsorganisasjon som jobber med problemer i skjæringspunktet mellom informasjonssikkerhet, samfunnssikkerhet og helse.'},
+    {name: 'Bent Heier Johansen', title: 'Masterstudent, NTNU', image: 'bent_heier_johansen.jpg', url: '', bio: 'Er i ferd med å fullføre mastergraden ved NTNU som har temaet drive-by cryptojacking.'},
     {name: 'Bjarte Aksnes', title: 'Seniorrådgiver, Direktoratet for e-helse', image: 'bjarte_aksnes.jpg', url: '', bio: 'Lang fartstid i Helsedirektoratet og nå i det som heter Direktoratet for e-helse. Bjarte har tidligere arbeidet i KITH AS (Kompetansesenter for IT i helse- og sosialsektoren). Han er siv.ing. og har arbeidet mye med informasjonssikkerhet og arkitektur.'},
     {name: 'Camilla Gustafsson', title: 'Løsningsarkitekt, Basefarm', image: 'camilla_gustafsson.jpg', url: '', bio: 'Har 15 års erfaring fra IT-bransjen, og jobber for tiden med å designer sikkerhetsløsninger for kunder. Hun har tidligere hatt ansvaret for sikkerhetsproduktene i Basefarm, og har fremdeles et tett samarbeid med Basefarms egen sikkerhetsavdeling. Camilla er i dag medlem av en arbeidsgruppe for Cloud Security Alliance (CSA) som jobber med å lage en forenklet utgave av CSA sin Security Guidance med anbefalinger til hva brukerne av skytjenester bør tenke på før de flytter løsningene sine ut i skyen.'},
     {name: 'Cecilie Wian', title: 'IT Konsulent, Knowit', image: 'cecilie_wian.jpg', url: '', bio: 'Med en bakgrunn i både pedagogikk og it, og et hjerte for brukerne. Jobber som konsulent hos Knowit Consulting Bergen, hovedsaklig med QA'},
