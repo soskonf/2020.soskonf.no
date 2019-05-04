@@ -67,12 +67,27 @@ type SessionItemProps = {
 
 function SessionItem(props: SessionItemProps) {
     const isFavorite = props.favorites.findIndex(fav => fav.sessionId === props.session.sessionId);
+    const isLink = props.session.link;
+    const isSessionId = props.session.sessionId;
     return (
         <div key={props.session.sessionId} className={`${isFavorite >= 0 ? 'program-simple-session-item-fav' : 'program-simple-session-item'}`}>
             <Row>
                 <Col xs={12} sm={10} md={11} lg={11}>
                     <Row className="program-simple-session-title">
-                        {props.session.sessionId ? <Link href={`/program/${props.session.sessionId}`}>{props.session.title}</Link> : props.session.title}
+
+                        {(() => {
+                            if (isLink) {
+                                return (
+                                    <Link href={`${props.session.link}`}>{props.session.title}</Link>
+                                );
+                            } else if (isSessionId) {
+                                return (
+                                    <Link href={`/program/${props.session.sessionId}`}>{props.session.title}</Link>);
+                            } else {
+                                return (
+                                    props.session.title);
+                            }
+                        })()}
 
                     </Row>
                     <Row>
@@ -165,6 +180,42 @@ function Tuesday(props: DayProps) {
             </div> : null
     );
 }
+function Monday(props: DayProps) {
+    const filteredList = props.sessions.filter(session => session.startTime.startsWith('2019-05-06'));
+    const timeSlots = groupByTimeSlot(filteredList);
+    return (
+        filteredList.length > 0 ?
+            <div>
+                <h1 className="program-day-header">Mandag</h1>
+                {Object.keys(timeSlots).map((timeSlot, idx) => {
+                    return <div key={timeSlot + idx}>
+                        <h1 className="program-day-timeslot">{timeSlot.substr(-5)}</h1>
+                        {timeSlots[timeSlot].map((session, idx) => {
+                            return <SessionItem favorites={props.favorites} addToFav={props.addToFav} key={session.sessionId} session={session} />
+                        })}
+                    </div>
+                })}
+            </div> : null
+    );
+}
+function Monday(props: DayProps) {
+    const filteredList = props.sessions.filter(session => session.startTime.startsWith('2019-05-06'));
+    const timeSlots = groupByTimeSlot(filteredList);
+    return (
+        filteredList.length > 0 ?
+            <div>
+                <h1 className="program-day-header">Mandag</h1>
+                {Object.keys(timeSlots).map((timeSlot, idx) => {
+                    return <div key={timeSlot + idx}>
+                        <h1 className="program-day-timeslot">{timeSlot.substr(-5)}</h1>
+                        {timeSlots[timeSlot].map((session, idx) => {
+                            return <SessionItem favorites={props.favorites} addToFav={props.addToFav} key={session.sessionId} session={session} />
+                        })}
+                    </div>
+                })}
+            </div> : null
+    );
+}
 
 
 type SimpleSessionListProps = {
@@ -183,6 +234,7 @@ function SimpleSessionList(props: SimpleSessionListProps) {
     }
     return (
         <div className="program-list">
+            <Monday favorites={props.favorites} addToFav={props.addToFav} sessions={filteredList} />
             <Tuesday favorites={props.favorites} addToFav={props.addToFav} sessions={filteredList} />
             <Wednesday favorites={props.favorites} addToFav={props.addToFav} sessions={filteredList} />
         </div>
