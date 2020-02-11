@@ -145,7 +145,7 @@ class Navigation extends React.Component<NavigationProps, NavigationState> {
                     <NavItem active={this.isActiveNavItem("/tickets")} link="/tickets">BILLETTER</NavItem>
                     <NavItem active={this.isActiveNavItem("/speakers")} link="/speakers">FOREDRAGSHOLDERE</NavItem>
                     <NavItem active={this.isActiveNavItem("/program")} link="/program">PROGRAM</NavItem>
-                    <NavItem active={this.isActiveNavItem("/workshops")} link="/workshops">KURS</NavItem>
+                    {/*<NavItem active={this.isActiveNavItem("/workshops")} link="/workshops">KURS</NavItem>*/}
                     <NavItem active={this.isActiveNavItem("/partners")} link="/partners">PARTNERE</NavItem>
                     {/*<NavItem active={this.isActiveNavItem("/startups")} link="/startups">STARTUPS</NavItem>*/}
                     {/*<NavItem active={this.isActiveNavItem("/conduct")} link="/conduct">CODE OF CONDUCT</NavItem>*/}

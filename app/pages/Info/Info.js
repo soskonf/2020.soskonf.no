@@ -8,7 +8,7 @@ import partners from '../../data/partners';
 import speakers from '../../data/speakers';
 import {Col, Grid, Row} from 'react-flexbox-grid';
 import {Link} from "../../components/link";
-import britannia from "../../assets/pirsenteret-fasade.png";
+import pirsenteret from "../../assets/pirsenteret-fasade.png";
 import SOSLogo from "../../assets/logo/sos-logo-flat-invert-white-1860x142.png";
 
 function shuffle(o) {
@@ -123,11 +123,13 @@ function TicketSection() {
 function BetterExplorerSection() {
     return (
         <Section>
+{/*
             <LeftBlock header="En dag med kurs">
                 <p>
                     Dagen før konferansen avholdes det et <a href="/workshops">sertifiseringskurs</a> i Certificate of Cloud Security Knowledge (CCSK) versjon 4.
                 </p>
             </LeftBlock>
+*/}
             <LeftBlock header="To dager konferanse">
                 <p>
                     To dager med foredrag. Ikke gå glipp av alle de fantastiske <a href="/program">foredragene</a>.
@@ -203,6 +205,9 @@ function QuestionSection() {
         <Section>
             <LeftBlock header="Lokasjon">
                 <ImageBlock image={pirsenteret} alt="Pirsenteret"/>
+                <p>
+                    Konferansen vil bli avhold på Pirsenteret i Trondheim.
+                </p>
             </LeftBlock>
             <LeftBlock header="Spørsmål?">
                 <p>
