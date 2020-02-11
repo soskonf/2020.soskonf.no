@@ -49,7 +49,7 @@ function PartnerList(props: PartnerListProps) {
     );
 }
 
-const speakerImagesContext = require.context('../../assets/2019/speakers', false, /\.jpg$/);
+const speakerImagesContext = require.context('../../assets/2020/speakers', false, /\.jpg$/);
 const speakerImages = speakerImagesContext.keys().map(image => (
     {context: speakerImagesContext(image), filename: image}
 ));
@@ -113,7 +113,7 @@ function TicketSection() {
                 <p>
                     <br/>
                     <a className='button button--transparent' href="/tickets">Kjøpt billett til Sikkerhet og Sårbarhet
-                        2019 nå!</a>
+                        2020 nå!</a>
                 </p>
             </CenterBlock>
         </Section>
@@ -202,21 +202,14 @@ function QuestionSection() {
     return (
         <Section>
             <LeftBlock header="Lokasjon">
-                <ImageBlock image={britannia} alt="Britannia Kongress"/>
-                <p>
-                    Britannia hotell gjenåpnet 1. April 2019 etter en større rehabilitering, akkurat i tide for konferansen.
-                    Det er allerede høyt påtrykk for booking av rom, så hvis du ønsker å bo her under konferansen så er
-                    det viktig å reservere tidlig.
-                </p>
-                <p>
-                    Kontakt <a href='mailto:contact@britannia.no'>contact@britannia.no</a> eller ring 73 800 800 for booking.                </p>
+                <ImageBlock image={pirsenteret} alt="Pirsenteret"/>
             </LeftBlock>
             <LeftBlock header="Spørsmål?">
                 <p>
                     Ta kontakt på <a href='mailto:program@soskonf.no'>program@soskonf.no</a> hvis du har noen spørsmål.
                 </p>
                 <p>
-                    Vi håper å kunne se deg på Sikkerhet og Sårbarhet 2019!
+                    Vi håper å kunne se deg på Sikkerhet og Sårbarhet 2020!
                 </p>
             </LeftBlock>
         </Section>
@@ -227,8 +220,8 @@ function QuestionSection() {
 function Info() {
     return (
         <Page name='info'>
-            <PageHeader subHeader="6.-8. Mai" subSubHeader="Britannia Hotell, Trondheim">
-                <ImageBlock image={SOSLogo} alt="Sikkerhet og Sårbarhet 2019"/>
+            <PageHeader subHeader="28.-29. April" subSubHeader="Pirsenteret, Trondheim">
+                <ImageBlock image={SOSLogo} alt="Sikkerhet og Sårbarhet 2020"/>
             </PageHeader>
             <AboutSection/>
             {/*<TicketSection />*/}

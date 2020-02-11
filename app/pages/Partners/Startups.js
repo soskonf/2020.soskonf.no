@@ -48,7 +48,7 @@ function PartnerList(props: PartnerListProps) {
 function Startups() {
     return (
         <Page name='starups'>
-            <PageHeader subHeader="Join us in 2019">Dear Trondheim Startups</PageHeader>
+            <PageHeader subHeader="Join us in 2020">Dear Trondheim Startups</PageHeader>
 
             <Section>
                 <LeftBlock header="We want to support you!">

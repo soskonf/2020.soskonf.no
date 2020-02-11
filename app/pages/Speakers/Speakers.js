@@ -2,7 +2,6 @@ import * as React from 'react';
 import Page from '../../components/Page/Page';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import {LeftBlock} from '../../components/Block/Block';
-import {Col, Grid, Row} from 'react-flexbox-grid';
 import {Section} from '../../components/Section/Section';
 import speakers from '../../data/speakers';
 import './Speakers.less';
@@ -12,7 +11,7 @@ function shuffle(o) {
     return o;
 }
 
-const speakerImagesContext = require.context('../../assets/2019/speakers', false, /\.jpg$/);
+const speakerImagesContext = require.context('../../assets/2020/speakers', false, /\.jpg$/);
 const speakerImages = speakerImagesContext.keys().map(image => (
     {context: speakerImagesContext(image), filename: image}
 ));

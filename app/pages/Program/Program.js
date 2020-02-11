@@ -4,11 +4,10 @@ import {getSessions} from '../../actions/sessions';
 import {setDay, setFilteredList, setLanguage, setShow} from '../../actions/filters';
 import {Section} from '../../components/Section/Section.js';
 import PageHeader from '../../components/PageHeader/PageHeader.js';
-import {CheckCircle, Circle, Clock, Globe, PlayCircle, User, Users} from 'react-feather';
+import {CheckCircle, Circle} from 'react-feather';
 import Page from '../../components/Page/Page';
-import {Col, Grid, Row} from 'react-flexbox-grid';
+import {Col, Row} from 'react-flexbox-grid';
 import * as React from 'react';
-import {compose, filter, find, get, groupBy, includes, join, last, map, orderBy, reduce, without} from 'lodash/fp';
 import Loader from '../../components/Loader/Loader.js';
 import './Program.less';
 
@@ -446,7 +445,7 @@ class Program extends React.Component<ProgramProps, ProgramState> {
 
         return (
             <Page name='program'>
-                <PageHeader subHeader="Sett av datoen">Program for Sikkerhet og Sårbarhet 2019</PageHeader>
+                <PageHeader subHeader="Sett av datoen">Program for Sikkerhet og Sårbarhet 2020</PageHeader>
                 {content}
             </Page>
         );

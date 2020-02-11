@@ -3,7 +3,6 @@ import * as React from 'react';
 import {P} from '../../components/block';
 import {Section} from '../../components/Section/Section';
 import {CenterBlock} from '../../components/Block/Block';
-import {Col, Grid, Row} from 'react-flexbox-grid';
 import Page from '../../components/Page/Page';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import './Tickets.less';
@@ -13,7 +12,7 @@ type TicketsProps = {}
 function Tickets(props: TicketsProps) {
     return (
         <Page name='tickets'>
-            <PageHeader subHeader="til Sikkerhet og Sårbarhet 2019">Kjøp billetter</PageHeader>
+            <PageHeader subHeader="til Sikkerhet og Sårbarhet 2020">Kjøp billetter</PageHeader>
             <Section>
                 <CenterBlock header="Ordinær">
                     <div className="partner-prices-main"></div>

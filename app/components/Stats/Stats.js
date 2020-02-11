@@ -2,10 +2,10 @@
 import * as React from 'react';
 import {Col, Grid, Row} from 'react-flexbox-grid';
 import './Stats.less';
-import location from '../../assets/2019/icons/location.svg';
-import calendar from '../../assets/2019/icons/calendar.svg';
-import mic from '../../assets/2019/icons/mic.svg';
-import partners from '../../assets/2019/icons/partners.svg';
+import location from '../../assets/2020/icons/location.svg';
+import calendar from '../../assets/2020/icons/calendar.svg';
+import mic from '../../assets/2020/icons/mic.svg';
+import partners from '../../assets/2020/icons/partners.svg';
 
 type StatsProps = {
 }

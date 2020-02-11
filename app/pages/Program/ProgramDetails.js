@@ -7,9 +7,6 @@ import Loader from '../../components/Loader/Loader.js';
 import {Section} from '../../components/Section/Section.js';
 import PageHeader from '../../components/PageHeader/PageHeader.js';
 import {LeftBlock} from '../../components/Block/Block.js';
-import {PageHeading} from '../../components/page';
-import {compose, constant, find, get} from 'lodash/fp';
-import {CenterBlock} from "../../components/Block/Block";
 
 type ProgramDetailsProps = {
     sessions: [];
@@ -99,7 +96,7 @@ class ProgramDetails extends React.Component<ProgramDetailsProps, ProgramDetails
                                 {speaker.image ?
                                     <div className="block-image-wrapper">
                                         <div key={speaker.name} className="block-image">
-                                            <img src={require('../../assets/2019/speakers/'+speaker.image)} alt={speaker.name}/>
+                                            <img src={require('../../assets/2020/speakers/'+speaker.image)} alt={speaker.name}/>
                                         </div>
                                     </div> : null}                                    </LeftBlock>
                         }) : null}

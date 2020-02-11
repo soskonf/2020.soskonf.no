@@ -50,7 +50,7 @@ function PartnerList(props: PartnerListProps) {
 function Partners() {
     return (
         <Page name='partners'>
-            <PageHeader subHeader="Bli partner i 2019">Kjære partnere</PageHeader>
+            <PageHeader subHeader="Bli partner i 2020">Kjære partnere</PageHeader>
 
             <Section>
                 <LeftBlock header="Vi ønsker partnere, ikke sponsorer">
@@ -94,7 +94,7 @@ function Partners() {
                             Fem billetter til redusert partnerpris.
                         </li>
                         <li className='list__item'>
-                            Logoen på <a href='https://2019.soskonf.no'>nettsidene</a>,
+                            Logoen på <a href='https://2020.soskonf.no'>nettsidene</a>,
                             konferanseområdet, i programmet og alt reklamemateriell.
                         </li>
                     </ul>
@@ -110,7 +110,7 @@ function Partners() {
                             To billetter til redusert partnerpris.
                         </li>
                         <li className='list__item'>
-                            Logoen på <a href='https://2019.soskonf.no'>nettsidene</a>,
+                            Logoen på <a href='https://2020.soskonf.no'>nettsidene</a>,
                             konferanseområdet, i programmet og alt reklamemateriell.
                         </li>
                     </ul>

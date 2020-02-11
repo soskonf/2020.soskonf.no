@@ -8,11 +8,11 @@ function Banner() {
         <div className="banner">
             <div className='logos'>
                 <img className='soslogo' src={SOSLogo} alt="SoS" />
-                {/*<h1 className='sostext'>Sikkerhet og Sårbarhet 2019</h1>*/}
+                {/*<h1 className='sostext'>Sikkerhet og Sårbarhet 2020</h1>*/}
             </div>
 
             <div className="logo-text">
-                <h2>Britannia Hotell 6.-8. Mai. 2019, Trondheim</h2>
+                <h2>Pirsentert 28.-29. April. 2020, Trondheim</h2>
             </div>
         </div>
     );
