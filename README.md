@@ -1,15 +1,15 @@
-[![Build Status](https://travis-ci.org/soskonf/2019.soskonf.no.svg?branch=master)](https://travis-ci.org/soskonf/2019.soskonf.no)
+[![Build Status](https://travis-ci.org/soskonf/2020.soskonf.no.svg?branch=master)](https://travis-ci.org/soskonf/2020.soskonf.no)
 
-# 2019.soskonf.no
+# 2020.soskonf.no
 
-This is the repository for 2019.soskonf.no. It is a react application.
+This is the repository for 2020.soskonf.no. It is a react application.
 
 ## Setup
 
 You need a relatively new version of node.js. Anything above 6.0 should work.
 
-    git clone git@github.com:soskonf/2019.soskonf.no.git
-    cd 2019.soskonf.no
+    git clone git@github.com:soskonf/2020.soskonf.no.git
+    cd 2020.soskonf.no
     npm i
     
 ## Technologies
@@ -29,6 +29,6 @@ Run in watch mode:
 ## Deployment
 
 Everything is automatic. The `develop` branch is automatically deployed to https://test.soskonf.no
-and `master` is automatically deployed to https://2019.soskonf.no. Push to `develop` (or a separate
+and `master` is automatically deployed to https://2020.soskonf.no. Push to `develop` (or a separate
 branch if you would rather do that) and create a pull request from `develop` to `master` when you want
 to deploy to production.
