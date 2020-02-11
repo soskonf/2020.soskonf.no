@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Col, Grid, Row} from 'react-flexbox-grid';
-import partners1 from '../../assets/britannia-fasade1.jpg';
+import partners1 from '../../assets/pirsenteret-fasade.png';
 import {CenterBlock, ImageBlock, LeftBlock} from '../../components/Block/Block';
 import {Header, SubHeader} from '../../components/Header/Header';
 import Page from '../../components/Page/Page';
@@ -66,7 +66,7 @@ function Partners() {
                 <PartnerList partners={partners} />
             </Section>
             <Section fluid>
-                <ImageBlock image={partners1} alt="Britannia Kongress" />
+                <ImageBlock image={partners1} alt="Pirsenteret" />
             </Section>
             <Section>
                 <CenterBlock header="Utstillerområdet">
@@ -118,7 +118,7 @@ function Partners() {
             </Section>
 {/*
             <Section fluid>
-                <ImageBlock image={partners2} alt="Britannia Kongress" />
+                <ImageBlock image={partners2} alt="Pirsenteret" />
             </Section>
 */}
             <Section>

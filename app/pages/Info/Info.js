@@ -8,7 +8,7 @@ import partners from '../../data/partners';
 import speakers from '../../data/speakers';
 import {Col, Grid, Row} from 'react-flexbox-grid';
 import {Link} from "../../components/link";
-import britannia from "../../assets/britannia-fasade2.jpg";
+import britannia from "../../assets/pirsenteret-fasade.png";
 import SOSLogo from "../../assets/logo/sos-logo-flat-invert-white-1860x142.png";
 
 function shuffle(o) {
@@ -190,7 +190,7 @@ function LocationSection() {
             <Header align='center'>Holdes på ærverdige Britannia Hotell!</Header>
             <LeftBlock>
                 <Section>
-                    <ImageBlock image={britannia} alt="Britannia Kongress"/>
+                    <ImageBlock image={britannia} alt="Pirsenteret"/>
                 </Section>
             </LeftBlock>
         </Section>

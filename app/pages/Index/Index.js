@@ -26,7 +26,7 @@ function Index() {
                     </p>
                 </LeftBlock>
                 {/*<Section fluid>*/}
-                    {/*<ImageBlock image={partners1} alt="Britannia Kongress" />*/}
+                    {/*<ImageBlock image={partners1} alt="Pirsenteret" />*/}
                 {/*</Section>*/}
             </Section>
         </Page>
