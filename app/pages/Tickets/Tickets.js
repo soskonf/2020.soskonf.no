@@ -17,8 +17,9 @@ function Tickets(props: TicketsProps) {
                 <CenterBlock header="Ordinær">
                     <div className="partner-prices-main"></div>
                     <P>
-                        <a className='button button--transparent'
-                           href="https://embedded-trd.hoopla.no/sales/3657439979">Kjøp billett via Hoopla</a>
+                        Kommer
+                        {/*<a className='button button--transparent'*/}
+                        {/*   href="https://embedded-trd.hoopla.no/sales/3657439979">Kjøp billett via Hoopla</a>*/}
                     </P>
 
                 </CenterBlock>

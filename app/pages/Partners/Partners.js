@@ -80,7 +80,7 @@ function Partners() {
             <Section dark>
                 <LeftBlock header="Partner alterntiver">
                     <p>
-                        Utstillerområde på Britannia Hotell går oss god plass og en unik opplevelse.
+                        Utstillerområde på Pirsenteret går oss god plass.
                     </p>
                     <SubHeader>Hovedspartner</SubHeader>
                     <ul className='list'>
@@ -124,7 +124,7 @@ function Partners() {
             <Section>
                 <CenterBlock header="Ta kontakt">
                     <p>
-                        Kontakt oss for å bli partner på <a href='mailto:laila.katnosa@dataforeningen.no'>laila.katnosa@dataforeningen.no</a>.
+                        Kontakt oss for å bli partner på <a href='mailto:program@soskonf.no'>program@soskonf.no</a>.
                     </p>
                 </CenterBlock>
             </Section>

@@ -189,10 +189,10 @@ function SpeakerSection() {
 function LocationSection() {
     return (
         <Section alternate pixel fluid>
-            <Header align='center'>Holdes på ærverdige Britannia Hotell!</Header>
+            <Header align='center'>Holdes på Pirsentert!</Header>
             <LeftBlock>
                 <Section>
-                    <ImageBlock image={britannia} alt="Pirsenteret"/>
+                    <ImageBlock image={pirsenteret} alt="Pirsenteret"/>
                 </Section>
             </LeftBlock>
         </Section>

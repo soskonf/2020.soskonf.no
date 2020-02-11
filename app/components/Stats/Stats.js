@@ -32,7 +32,7 @@ function Stats(props: StatsProps) {
                 <Col xs={12} sm={12} md={12} lg={12}>
                     <Row>
                         <Col xs={12} sm={6} md={3} lg={3}>
-                            <StatItem image={location}>Britannia Hotell, Trondheim</StatItem>
+                            <StatItem image={location}>Pirsentert, Trondheim</StatItem>
                         </Col>
                         <Col xs={12} sm={6} md={3} lg={3}>
                             <StatItem image={calendar}>6.-8. Mai</StatItem>
