@@ -123,22 +123,14 @@ function TicketSection() {
 function BetterExplorerSection() {
     return (
         <Section>
-{/*
-            <LeftBlock header="En dag med kurs">
-                <p>
-                    Dagen før konferansen avholdes det et <a href="/workshops">sertifiseringskurs</a> i Certificate of Cloud Security Knowledge (CCSK) versjon 4.
-                </p>
-            </LeftBlock>
-*/}
             <LeftBlock header="To dager konferanse">
                 <p>
                     To dager med foredrag. Ikke gå glipp av alle de fantastiske <a href="/program">foredragene</a>.
                 </p>
             </LeftBlock>
-            <LeftBlock header="Middag og underholdning">
+            <LeftBlock header="Middag og god drikke">
                 <p>
-                    Etter en dag med gode foredrag og mye diskusjon, så vil det smake med en god middag og litt
-                    underholdning.
+                    Etter en dag med gode foredrag og mye diskusjon, så vil det smake med en god middag på E.C. Dahls Pub og Kjøkken.
                 </p>
             </LeftBlock>
             <LeftBlock header="Nettverking">
@@ -146,6 +138,11 @@ function BetterExplorerSection() {
                     Vi lover at du vil møte mange interessante folk på Sikkerhet og Sårbarhet. Ta en kaffe og diskuter!
                 </p>
             </LeftBlock>
+            {/*<LeftBlock header="Studenkveld på DIGS ">*/}
+            {/*    <p>*/}
+            {/*        Dagen før konferansen avholdes det en egen studentkveld på DIGS.*/}
+            {/*    </p>*/}
+            {/*</LeftBlock>*/}
         </Section>
     );
 }
@@ -206,7 +203,7 @@ function QuestionSection() {
             <LeftBlock header="Lokasjon">
                 <ImageBlock image={pirsenteret} alt="Pirsenteret"/>
                 <p>
-                    Konferansen vil bli avhold på Pirsenteret i Trondheim.
+                    Konferansen vil bli avholdt på Pirsenteret i Trondheim.
                 </p>
             </LeftBlock>
             <LeftBlock header="Spørsmål?">
