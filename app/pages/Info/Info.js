@@ -130,7 +130,7 @@ function BetterExplorerSection() {
             </LeftBlock>
             <LeftBlock header="Middag og god drikke">
                 <p>
-                    Etter en dag med gode foredrag og mye diskusjon, så vil det smake med en god middag på E.C. Dahls Pub og Kjøkken.
+                    Etter en dag med gode foredrag og mye diskusjon, så vil det smake med en god middag på <a href="https://www.ecdahls.no/">E.C. Dahls Pub og Kjøkken</a>.
                 </p>
             </LeftBlock>
             <LeftBlock header="Nettverking">
