@@ -11,5 +11,6 @@ export default [
     {name: 'Øyvind Røset', title: 'Informasjonssikkerhetsrådgiver, Helse Midt-Norge', image: 'oyvind_roset.jpg', url: '', bio: ''},
     {name: 'Åsmund Skomedal', title: 'Forskningsdirektør, Norsk Regnesentral', image: 'asmund_skomedal.jpg', url: '', bio: ''},
     {name: 'Roar Thon', title: 'Fagdirektør, NSM', image: 'roar_thon.jpg', url: 'https://twitter.com/secdefence', bio: ''},
-    {name: 'Veronica Jarnskjold Buer', title: 'Fagdirektør, Datatilsynet', image: 'veronica_buer.jpg', url: '', bio: ''}
+    {name: 'Veronica Jarnskjold Buer', title: 'Fagdirektør, Datatilsynet', image: 'veronica_buer.jpg', url: '', bio: ''},
+    {name: 'Hildegunn Vada', title: 'Avdelingsdirektør, Uninett', image: 'hildegunn_vada.jpg', url: '', bio: ''}
 ];
