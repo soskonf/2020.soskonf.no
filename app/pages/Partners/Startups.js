@@ -13,7 +13,7 @@ function shuffle(o){
     return o;
 }
 
-const imagesContext = require.context('../../assets/partners-19', false, /\.svg$/);
+const imagesContext = require.context('../../assets/partners-20', false, /\.svg$/);
 const images = imagesContext.keys().map(image => (
     {context: imagesContext(image), filename: image}
 ));
