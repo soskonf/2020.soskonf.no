@@ -88,6 +88,11 @@ function SpeakerList(props: SpeakerListProps) {
 function AboutSection() {
     return (
         <Section>
+            <LeftBlock header="Utsatt på ubestemt tid">
+                <p>
+                    I lys av hendelsene rundt Koronaviruset så har programkomiteen valgt å utsette Sikkerhet og Sårbarhet 2020 på ubestemt tid. Dette betyr at det ikke blir noe konferanse 28.-29. April i Trondheim. Vi vil komme tilbake med en eventuell ny dato hvis det skulle bli aktuelt.
+                </p>
+            </LeftBlock>
             <LeftBlock header="Hva er Sikkerhet og Sårbarhet">
                 <p>
                     Sikkerhet og Sårbarhet er et møtestedet for deg som er opptatt av informasjonssikkerhet og IT. Vil
