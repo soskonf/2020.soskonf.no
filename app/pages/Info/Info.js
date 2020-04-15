@@ -88,9 +88,9 @@ function SpeakerList(props: SpeakerListProps) {
 function AboutSection() {
     return (
         <Section>
-            <LeftBlock header="Utsatt på ubestemt tid">
+            <LeftBlock header="Avlyst">
                 <p>
-                    I lys av hendelsene rundt Koronaviruset så har programkomiteen valgt å utsette Sikkerhet og Sårbarhet 2020 på ubestemt tid. Dette betyr at det ikke blir noe konferanse 28.-29. April i Trondheim. Vi vil komme tilbake med en eventuell ny dato hvis det skulle bli aktuelt.
+                    I lys av hendelsene rundt Koronaviruset så har programkomiteen valgt å avlyse Sikkerhet og Sårbarhet 2020. Dette betyr at det ikke blir noe konferanse 28.-29. April i Trondheim.
                 </p>
             </LeftBlock>
             <LeftBlock header="Hva er Sikkerhet og Sårbarhet">
